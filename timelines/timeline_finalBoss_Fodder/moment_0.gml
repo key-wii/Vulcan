@@ -1,0 +1,11 @@
+start = true;
+spawner1 = instance_create_layer(x, y, "Floor", obj_enemy_hive_final);
+spawner1.left = true;
+spawner1.owner = id;
+spawner1.image_xscale = 2;
+spawner1.image_yscale = 2;
+spawner2 = instance_create_layer(x, y, "Floor", obj_enemy_hive_final);
+spawner2.right = true;
+spawner2.owner = id;
+spawner2.image_xscale = 2;
+spawner2.image_yscale = 2;

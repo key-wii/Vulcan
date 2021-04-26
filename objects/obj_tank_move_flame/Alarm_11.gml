@@ -1,0 +1,1 @@
+just_touched_wall = false;

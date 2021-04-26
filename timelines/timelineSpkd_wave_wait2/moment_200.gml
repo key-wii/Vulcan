@@ -1,0 +1,1 @@
+with (obj_bbbird_move) leave = true;

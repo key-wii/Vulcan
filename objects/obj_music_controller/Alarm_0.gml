@@ -1,0 +1,1 @@
+/*if (global.mute == true) audio_stop_sound(bgm);

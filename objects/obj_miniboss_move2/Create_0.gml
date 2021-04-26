@@ -1,0 +1,10 @@
+event_inherited();
+owner = id;
+hp = 10;
+spd = 1.5;
+topSpeed = 14;
+backBoost = 0;
+miniboss = true;
+alarm_set(1, 1);
+alarm_set(0, 1);
+jump = 3;

@@ -1,0 +1,10 @@
+if (global.moving) exit;
+with (other) if (alarm_get(0) < 1 && !alreadyHit && !noFlame) alarm_set(10, 1);
+if (other.alreadyHit || other.noFlame) exit;
+other.alreadyHit = true;
+other.hit = 3;
+var xx = lengthdir_x(150, direction);
+var yy = lengthdir_y(150, direction);
+expl = instance_create_layer(x + xx, y + yy, "Explosions", obj_explosion_large);
+expl.direction = direction;
+expl.speed = 4;

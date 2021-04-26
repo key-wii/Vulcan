@@ -1,0 +1,1 @@
+if (visible && !flaming) image_alpha -= .3;

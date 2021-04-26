@@ -1,0 +1,1 @@
+flashCount = -1;

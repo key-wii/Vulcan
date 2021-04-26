@@ -1,0 +1,1 @@
+if (enemies < 4) timeline_position = 550;

@@ -1,0 +1,1 @@
+hurtful = false;

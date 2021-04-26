@@ -1,0 +1,1 @@
+if (damage > 6750) timeline_position = 6599;

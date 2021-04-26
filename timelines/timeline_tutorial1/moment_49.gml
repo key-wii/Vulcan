@@ -1,0 +1,1 @@
+instance_create_layer(xx + 80, yy - 240, "Enemy", obj_enemy_tutorial_dummy);

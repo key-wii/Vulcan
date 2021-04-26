@@ -1,0 +1,1 @@
+if (instance_exists(owner)) instance_create_layer(owner.x, owner.y, "Enemy", obj_burst_boss_e);

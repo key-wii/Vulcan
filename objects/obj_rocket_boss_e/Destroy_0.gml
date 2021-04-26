@@ -1,0 +1,1 @@
+with (particleMachine) instance_destroy();

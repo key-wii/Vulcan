@@ -1,0 +1,1 @@
+if (global.checkpoint == 0 && phase == 1 && global.flameKills < 4) with(text) instance_destroy();

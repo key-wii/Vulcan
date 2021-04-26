@@ -1,0 +1,12 @@
+image_angle = direction;
+if (!instance_exists(owner)) exit;
+if (owner.prev_x == owner.x) exit;
+if (owner.prev_y == owner.y) exit;
+hspeed += owner.hspeed;
+vspeed += owner.vspeed;
+var dis = point_distance(owner.prev_x, owner.prev_y, owner.x, owner.y);
+var _dir = point_direction(owner.prev_x, owner.prev_y, owner.x, owner.y);
+x += lengthdir_x(dis, _dir);
+y += lengthdir_y(dis, _dir);
+owner.prev_x = owner.x;
+owner.prev_y = owner.y;

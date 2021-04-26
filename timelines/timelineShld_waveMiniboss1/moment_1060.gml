@@ -1,0 +1,1 @@
+obj_enemy_bomb_mom.radiusIncrease = 400;

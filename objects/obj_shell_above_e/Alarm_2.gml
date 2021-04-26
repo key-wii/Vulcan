@@ -1,0 +1,1 @@
+shadowScale -= .2;

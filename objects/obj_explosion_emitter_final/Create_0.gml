@@ -1,0 +1,10 @@
+expl_obj = obj_explosion_miniboss;
+expl_timer = 12;
+ddir = 1; inverse = false;
+xx = 0; yy = 0;
+yadjust = 0;
+up = true;
+makeMore = 8;
+alarm_set(0, 1);
+alarm_set(1, 1);
+alarm_set(2, 15);

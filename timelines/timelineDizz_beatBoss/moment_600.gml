@@ -1,0 +1,1 @@
+if (instance_number(obj_enemy_parent) > 0) timeline_position -= 100;

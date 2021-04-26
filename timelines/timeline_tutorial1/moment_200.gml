@@ -1,0 +1,11 @@
+xx = room_width / 2 - 54; yy = room_height / 2 - 56;
+var spawn1 = instance_create_layer(xx + 608, yy - 608, "Enemy", obj_enemy_spawn);
+spawn1.enemy = obj_enemy_s_armor_big;
+spawn1.set_hp = 110;
+var spawn2 = instance_create_layer(xx - 608, yy + 608, "Enemy", obj_enemy_spawn);
+spawn2.enemy = obj_enemy_s_armor_big;
+spawn2.set_hp = 110;
+var spawn3 = instance_create_layer(xx - 704, yy - 704, "Enemy", obj_enemy_spawn);
+spawn3.enemy = obj_enemy_s;
+var spawn4 = instance_create_layer(xx + 704, yy + 704, "Enemy", obj_enemy_spawn);
+spawn4.enemy = obj_enemy_s;

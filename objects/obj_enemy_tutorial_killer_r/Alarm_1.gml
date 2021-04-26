@@ -1,0 +1,17 @@
+var killers = instance_number(obj_tutorial_killer_move);
+if (killers > 8) audio_sound_gain(snd_shoot_e, .03, 60);
+if (killers > 16) audio_sound_gain(snd_shoot_e, .02, 60);
+if (killers > 24) audio_sound_gain(snd_shoot_e, .01, 60);
+if (killers > 32) audio_sound_gain(snd_shoot_e, .006, 60);
+if (killers > 40) audio_sound_gain(snd_shoot_e, .003, 60);
+if (killers > 48) audio_sound_gain(snd_shoot_e, .002, 60);
+if (killers > 56) audio_sound_gain(snd_shoot_e, .001, 60);
+if (random_range(0, 2) >= 1) audio_play_sound(snd_shoot_e, 0, false);
+else alarm_set(11, 1);
+var bull = instance_create_layer(x, y, "Enemy_Bullets", obj_rocket_e);
+bull.direction = direction;
+bull.image_angle = direction;
+bull.speed = 8;
+bull.startSpeed = 8;
+bull.finalSpeed = 10;
+alarm_set(2, 10);

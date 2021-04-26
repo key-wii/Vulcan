@@ -1,0 +1,1 @@
+if (phase < 9) timeline_index -= 10;

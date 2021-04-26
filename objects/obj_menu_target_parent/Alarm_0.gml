@@ -1,0 +1,1 @@
+//Triggered when player hits with flame or shoots this object

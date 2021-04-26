@@ -1,0 +1,6 @@
+xx = room_width / 2 - 42; yy = room_height / 2 - 44;
+global.checkpoint = 102;
+spawnNum = 3;
+count = 1;
+instance_destroy(obj_spawner_corners);
+with (obj_bbbird_move) leave = true;

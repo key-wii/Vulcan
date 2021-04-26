@@ -1,0 +1,1 @@
+draw_sprite_stretched(spr_fade_1p_strip24, i, view_xview, view_yview, obj_camera.cameraWidth + 2, obj_camera.cameraHeight + 2);

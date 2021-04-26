@@ -1,0 +1,1 @@
+touchingTick = 0;

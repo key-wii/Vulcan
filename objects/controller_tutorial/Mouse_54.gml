@@ -1,0 +1,1 @@
+if (global.checkpoint == 0 && phase == 1) text = instance_create_layer(x, y, "UI", obj_combo_1);

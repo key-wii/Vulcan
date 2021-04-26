@@ -1,0 +1,22 @@
+/*smc = instance_number(obj_explosion_small_hit);
+if (smc = 0)  vol = .99 * adj;
+if (smc = 1)  vol = .99 * adj;
+if (smc = 2)  vol = .85 * adj;
+if (smc = 3)  vol = .8  * adj;
+if (smc = 4)  vol = .75 * adj;
+if (smc = 5)  vol = .7  * adj;
+if (smc = 6)  vol = .65 * adj;
+if (smc = 7)  vol = .6  * adj;
+if (smc = 8)  vol = .55 * adj;
+if (smc = 9)  vol = .5  * adj;
+if (smc = 10) vol = .45 * adj;
+if (smc = 11) vol = .4  * adj;
+if (smc = 12) vol = .35 * adj;
+if (smc = 13) vol = .3  * adj;
+if (smc = 14) vol = .099* adj;
+if (smc = 15) vol = .096* adj;
+if (smc = 16) vol = .093* adj;
+if (smc = 17) vol = .09 * adj;
+if (smc > 17) vol = .08 * adj;
+audio_sound_gain(snd_explosion_small, vol, 810);*/
+sound_machine(snd_explosion_small2, x, y);

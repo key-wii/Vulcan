@@ -1,0 +1,1 @@
+with (obj_tank_pilot) instance_create_layer(x, y + 200, "Walls", obj_how_to_shoot);

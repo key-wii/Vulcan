@@ -1,0 +1,10 @@
+enemy = obj_enemy_s;
+set_dir = 1000;
+set_hp = 0;
+layer = layer_get_id("Enemy_UI");
+image_speed = .35;
+ready = false;
+leave = false;
+alarm_set(0, 55);
+alarm_set(4, 1);
+alarm_set(11, 1);

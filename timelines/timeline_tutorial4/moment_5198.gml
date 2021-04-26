@@ -1,0 +1,1 @@
+if (count < 230) timeline_position = 5180;

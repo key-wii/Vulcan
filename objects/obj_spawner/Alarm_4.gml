@@ -1,0 +1,1 @@
+global.boss_just_killed = true;

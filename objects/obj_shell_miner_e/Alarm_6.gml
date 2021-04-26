@@ -1,0 +1,1 @@
+dirChange -= 5 * ddir;

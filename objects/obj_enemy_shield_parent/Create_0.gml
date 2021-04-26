@@ -1,0 +1,9 @@
+burnt = 0;
+hitting = false;
+x_adjust = 0;
+y_adjust = 0;
+lethal = true;
+damage = 0;
+broke = false;
+instabreak = false;
+hitExplode = false;

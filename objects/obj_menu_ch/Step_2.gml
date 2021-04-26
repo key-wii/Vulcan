@@ -1,0 +1,1 @@
+if (sprite_index != spr_chapter_hit) sprite_index = default_sprite;

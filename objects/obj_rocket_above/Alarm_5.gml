@@ -1,0 +1,11 @@
+image_xscale = 1;
+image_yscale = 1;
+layer = layer_get_id("Player_Bullets");
+speed = 10;
+instance_change(obj_rocket, false);
+alarm_set(0, 140);
+count = 0;
+target = noone;
+alarm_set(10, 5);
+alarm_set(1, 0);
+silent = true;

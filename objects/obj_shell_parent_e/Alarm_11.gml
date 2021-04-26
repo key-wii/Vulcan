@@ -1,0 +1,1 @@
+layer = layer_get_id("Enemy_Bullets_Front");

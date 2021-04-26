@@ -1,0 +1,15 @@
+image_xscale = 1;
+image_yscale = 1;
+layer = layer_get_id("Player_Bullets");
+speed = 16;
+instance_change(obj_bouncer, false);
+alarm_set(0, 140);
+count = 0;
+hit = false;
+hit_target = false;
+extended = false;
+lethal = true;
+maxSpeed = 30;
+maxComboSpeed = 80;
+prev_x = x;
+prev_y = y;
