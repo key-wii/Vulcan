@@ -1,6 +1,6 @@
 event_inherited();
 miniboss = true;
-owner = id;
+owner = obj_enemy_metatron.id;
 hp = 10;
 spd = 0;
 alarm_set(1, 1);

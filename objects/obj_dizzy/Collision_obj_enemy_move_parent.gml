@@ -1,3 +1,16 @@
+if (other.object_index == obj_menu_char_move) {
+	with (other.owner) {
+		spin = 372;
+		charCount = 0;
+		sprite_index = dead_sprite;
+		alarm_set(9, 10);
+		var explosion = instance_create_layer(x + 0, y + 0, "Explosions", obj_explosion_small);
+		explosion.direction = direction;
+		explosion.speed = 5;
+	}
+	instance_destroy();
+	exit;
+}
 var controller_exists = instance_exists(controller);
 if (global.flameKills > 0) {
 	if (controller_exists)

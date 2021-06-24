@@ -1,10 +1,16 @@
-//
-// Simple passthrough fragment shader
-//
-varying vec2 v_vTexcoord;
-varying vec4 v_vColour;
+varying vec2 v_texcoord;
+
+uniform vec2 resolution;
 
 void main()
-{
-    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
+{ 
+    vec2 onePixel = vec2(1.0 / resolution.x, 1.0 / resolution.y);
+    vec2 uv = v_texcoord;
+    
+    vec3 colour = vec3(0.5);
+    colour -= texture2D(gm_BaseTexture, uv - onePixel).rgb;
+    colour += texture2D(gm_BaseTexture, uv + onePixel).rgb;
+    colour.rgb = vec3((colour.r + colour.g + colour.b) / 3.0);
+    
+    gl_FragColor = vec4(colour.rgb, texture2D(gm_BaseTexture,uv).a);
 }

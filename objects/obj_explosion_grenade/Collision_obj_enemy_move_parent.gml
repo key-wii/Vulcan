@@ -1,3 +1,12 @@
+if (other.object_index == obj_menu_char_move) {
+	with (other.owner) {
+		spin = 372;
+		charCount = 0;
+		sprite_index = dead_sprite;
+		alarm_set(9, 10);
+	}
+	exit;
+}
 //if (counter && other.tempBlock) exit;
 if (other.grenadeAlreadyHitIndex <= alreadyHit) exit;
 alreadyHit++;

@@ -3,6 +3,8 @@ global.unpausing = false;
 global.just_won = false;
 global.boss_just_killed = false;
 global.mute = false;
+global.PauseScreenShot = sprite_create_from_surface(application_surface, 0, 0, 0, 0, false, false, 0, 0);
+//sprite_delete(global.PauseScreenShot);
 window_set_cursor(cr_none);
 depth = -1;
 global.max_trigger = 200;
@@ -11,9 +13,10 @@ global.hard = false;
 global.moving = false; //flagged as true when moving from menu to another room
 global.flameSpeedBoost = 0; //speed boost from getting 10+ flame kills
 global.checkpoint = 0;
+global.halfCheckpoint = 0;
 global.level = 0;
 global.waveEndCombo = 0;
-global.flameWaveKills = 0
+global.flameWaveKills = 0;
 
 global.kills = 0;
 global.time = 0;
@@ -37,6 +40,7 @@ while (global.finalMinibossesList[| 1] == global.finalBossesList[| 1] &&
 			ds_list_shuffle(global.finalBossesList);
 }
 
+global.death = true;
 //global.mute = false;
 global.mute = true;
 
@@ -136,7 +140,7 @@ part_type_direction(global.PartFinal, 0, 360, 10, 3);
 part_type_speed(global.PartFinal, 3.5, 4, .05, .01);
 part_type_shape(global.PartFinal, pt_shape_ring);
 part_type_size(global.PartFinal, .35, .4, .02, .02);
-part_type_alpha3(global.PartFinal, .7, .6, .3);
+part_type_alpha3(global.PartFinal, .7, .6, .1);
 part_type_blend(global.PartFinal, true);
 part_type_life(global.PartFinal, 25, 25);
 

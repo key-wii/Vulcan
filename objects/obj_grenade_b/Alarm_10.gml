@@ -16,9 +16,9 @@ if(enemy_exists) {
 	target = instance_nearest(x, y, obj_enemy_parent);
 	move_towards_point(target.x, target.y, 12);
 	image_angle = direction;
-} else if (instance_exists(obj_menu_target_parent)) {
+} else if (instance_exists(obj_menu_character)) {
 	audio_play_sound(snd_rocket_target, false, false);
-	target = instance_nearest(x, y, obj_menu_target_parent);
+	target = instance_nearest(x, y, obj_menu_character);
 	move_towards_point(target.x, target.y, 12);
 	image_angle = direction;
 } else {

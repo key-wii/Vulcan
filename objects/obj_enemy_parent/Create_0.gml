@@ -40,6 +40,7 @@ slimeDead = false;
 SH = false;
 killer = false;
 finalBoss = false;
+npc = false;
 max_trigger = 0;
 devil_trigger = 0;
 devil_refill = 0;

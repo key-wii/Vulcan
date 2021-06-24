@@ -1,0 +1,1 @@
+if (area == 9) if (wait mod 3 == 2) sprite_delete(spr);

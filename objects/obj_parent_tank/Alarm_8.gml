@@ -1,3 +1,4 @@
+if (lastSpikes <= 0) exit;
 //spikes shoot off when taking damage
 
 var hearts = floor((100 - damage) / 10);

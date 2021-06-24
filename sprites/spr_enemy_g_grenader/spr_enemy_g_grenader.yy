@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
+  "bbox_left": 6,
   "bbox_right": 73,
-  "bbox_top": 10,
+  "bbox_top": 12,
   "bbox_bottom": 66,
   "HTile": false,
   "VTile": false,
@@ -27,12 +27,12 @@
     {"compositeImage":{"FrameId":{"name":"e10c6213-d890-4452-98b6-afa6ed4146e5","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"e10c6213-d890-4452-98b6-afa6ed4146e5","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":{"name":"0c506cba-39f1-4e1a-9bd4-25c9594c2698","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_enemy_g_grenader","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"e10c6213-d890-4452-98b6-afa6ed4146e5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"be7ef9e7-d8c6-4a56-bb5f-6644b4f8497f","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"be7ef9e7-d8c6-4a56-bb5f-6644b4f8497f","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":{"name":"0c506cba-39f1-4e1a-9bd4-25c9594c2698","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_enemy_g_grenader","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"be7ef9e7-d8c6-4a56-bb5f-6644b4f8497f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"37524877-0f08-492c-91b9-4d45c320e264","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"37524877-0f08-492c-91b9-4d45c320e264","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":{"name":"0c506cba-39f1-4e1a-9bd4-25c9594c2698","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_enemy_g_grenader","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"37524877-0f08-492c-91b9-4d45c320e264","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"66fb598c-de76-41ce-9bad-30f55ef78444","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"66fb598c-de76-41ce-9bad-30f55ef78444","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":{"name":"0c506cba-39f1-4e1a-9bd4-25c9594c2698","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_g_grenader","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"66fb598c-de76-41ce-9bad-30f55ef78444","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"def8f208-4577-4d26-a875-3f5ab86a4e5f","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"def8f208-4577-4d26-a875-3f5ab86a4e5f","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"LayerId":{"name":"0c506cba-39f1-4e1a-9bd4-25c9594c2698","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_g_grenader","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","name":"def8f208-4577-4d26-a875-3f5ab86a4e5f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_enemy_g_grenader","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},
@@ -48,8 +48,8 @@
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"eb5e07e7-5320-4303-82e2-9ca79457f989","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e10c6213-d890-4452-98b6-afa6ed4146e5","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6777a7cc-f8a5-46bf-b703-1c7c035060cb","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"be7ef9e7-d8c6-4a56-bb5f-6644b4f8497f","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"51bd2717-88a9-435d-a612-d16968a075bf","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"37524877-0f08-492c-91b9-4d45c320e264","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c73caa22-946a-49ef-839c-8e0598e60f8d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66fb598c-de76-41ce-9bad-30f55ef78444","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"26dfe99a-618b-4a52-acc9-311d6f56f010","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"def8f208-4577-4d26-a875-3f5ab86a4e5f","path":"sprites/spr_enemy_g_grenader/spr_enemy_g_grenader.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

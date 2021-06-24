@@ -1,25 +1,93 @@
-/*image_speed = 0;
-level = 0;
-ch = 0;
-waves = 0;
-sprite_index = spr_levels_hit;
-ini_open("saveData.ini");
-area_complete1 = ini_read_real("Bosses Beat", "boss 1 beat", false);
-ini_close();
-if (area_complete1) default_sprite = spr_levels_beat;*/
+friction = 0.5;
+damage = 0;
+can_shoot = 0;
+ammunition = 0;
+shield = 25;
+shielding = false;
+can_move = true;
+windup_flame = 0;
+fix = 0;
+burst = 0;
+weapon = 0;
+burnt = 0;
+go = true;
+player_distance = 0;
+too_close = false;
+radius = 200.1;
+hitting = false;
+distanceToPlayer = 0;
+screenShake = 2;
+maxHp = 10;
+miniboss = false;
+hit_count = 0;
+alarm_set(8, 1);
+blink = obj_enemy_blink;
+bull_color = $FFCCCCCC;
+default_sprite = sprite_index;
+dead_sprite = spr_enemy_dead;
+stretch = true;
+prev_x = x;
+prev_y = y;
+x_adjust = 0;
+y_adjust = 0;
+chainKill = false;
+flameWeak = false;
+image_maxscale = 1;
+training = false;
+hydra = false;
+slime = false;
+slimeDead = false;
+SH = false;
+killer = false;
+finalBoss = false;
+npc = false;
+max_trigger = 0;
+devil_trigger = 0;
+devil_refill = 0;
+spinSpd = 0;
 
-text1 = "Simple Shells";
-text2 = "POW - 10 | 24 DPS";
-text3 = "Speed - 181.25%";
-text4 = "Reload - 160.00%";
-text5 = "Effect: N/A";
+
+maxHp = 9999;
+screenShake = 2;
+alarm_set(1, 2);
+npc = true;
+
+wheels = instance_create_layer(x, y, "Enemy", obj_menu_char_move);
+wheels.screenShake = screenShake;
+wheels.owner = id;
+wheels.hp = maxHp;
+alarm_set(0, 1);
+
+spBox = spr_talk_text;
+dialogues = ds_list_create();
+currentDialogue = 0;
+/*var box0 = array_create(5);
+box0[0] = ""; box0[1] = ""; box0[2] = ""; box0[3] = ""; box0[4] = "";
+text1 = box0[0];
+text2 = box0[1];
+text3 = box0[2];
+text4 = box0[3];
+text5 = box0[4];
 text = text1 + text2 + text3 + text4 + text5;
-col = c_yellow;
+textHeight = string_height(text) + 2;
+//boxWidth = sprite_get_width(spBox);
+											boxWidth = ceil(string_width(text1) * 2);
+if (string_width(text2) * 2 > boxWidth) boxWidth = ceil(string_width(text2) * 2);
+if (string_width(text3) * 2 > boxWidth) boxWidth = ceil(string_width(text3) * 2);
+if (string_width(text4) * 2 > boxWidth) boxWidth = ceil(string_width(text4) * 2);
+if (string_width(text5) * 2 > boxWidth) boxWidth = ceil(string_width(text5) * 2);
+boxWidth += 7;*/
+
+charCount = 0;
+textPart1 = "";
+textPart2 = "";
+textPart3 = "";
+textPart4 = "";
+textPart5 = "";
+
+col = c_black;
+talkWidth = 0;
 
 hovering = false;
-up = true;
-yyy = 0;
-maxWiggle = 40;
-pause = 0;
-
-alarm_set(9, 1);
+spin = 0;
+switchWait = false;

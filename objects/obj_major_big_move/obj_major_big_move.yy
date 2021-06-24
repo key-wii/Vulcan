@@ -3,7 +3,7 @@
     "name": "spPlayerTankFl_big",
     "path": "sprites/spPlayerTankFl_big/spPlayerTankFl_big.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,

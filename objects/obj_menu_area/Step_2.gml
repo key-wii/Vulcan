@@ -1,5 +1,7 @@
 if (area == 9) {
-	if (spin > 0) {
+	if (global.moving) {
+		spin = 18;
+	} else if (spin > 0) {
 		image_angle += clamp(1.5 * spin, 0, 18);
 		if (slowdown) spin -= .04;
 	} else if (spin < 0) spin = 0;

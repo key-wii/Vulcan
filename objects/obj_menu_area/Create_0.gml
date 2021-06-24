@@ -58,8 +58,11 @@ ini_open("saveData.ini");
 	image_index = 8;
 	if (ini_read_real("Bosses Beat", "boss final beat", false))
 		default_sprite = spr_levels_beat;
+	hit = -1;
+	spin = 0;
+	slowdown = false;
+	screen_surface = surface_create(display_get_width(), display_get_height());
+	size = 0;
+	wait = 0;
 }
 ini_close();
-hit = -1;
-spin = 0;
-slowdown = false;

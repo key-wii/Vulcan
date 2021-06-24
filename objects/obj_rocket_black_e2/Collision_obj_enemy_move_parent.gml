@@ -1,5 +1,5 @@
 if (other.miniboss || other.object_index == obj_bomber_move || other.owner.id == owner) {
-	direction += rotation;
+	/*direction += rotation;
 	x += lengthdir_x(point_distance(other.x, other.y, x, y), point_direction(other.x, other.y, x, y)) / 2;
 	y += lengthdir_y(point_distance(other.x, other.y, x, y), point_direction(other.x, other.y, x, y)) / 2;
 	x += lengthdir_x(speed, direction);
@@ -7,7 +7,7 @@ if (other.miniboss || other.object_index == obj_bomber_move || other.owner.id ==
 	with (other) {
 		x += lengthdir_x(speed, direction);
 		y += lengthdir_y(speed, direction);
-	}
+	}*/
 	exit;
 }
 

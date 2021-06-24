@@ -1,6 +1,4 @@
 move_bounce_solid(false);
-speed += 1;
-if (speed > 5) speed = 6;
 if (hurtful == true && instance_exists(obj_tank_pilot)) {
 	with (obj_tank_pilot) {
 		var negaDmg = damage - 100 - flameHeals;

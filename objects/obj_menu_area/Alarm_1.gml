@@ -14,6 +14,7 @@ if (area == 9) {
 	global.checkpoint = 1;
 	global.level = area + 3;
 }
+room_speed = 60;
 global.moving = false;
 with (obj_fade_screen) alarm_set(1, 1);
 room_goto(room0);

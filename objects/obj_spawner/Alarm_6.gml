@@ -528,9 +528,9 @@ if (global.waveCount == 8) {
 
 	 if (enemies < enemyLimit / 4)	  alarm_set(6, 30);
 else if (enemies < enemyLimit / 3)	  alarm_set(6, 60);
-else if (enemies < enemyLimit / 2)	  alarm_set(6, 110);
-else if (enemies < enemyLimit / 1.5)  alarm_set(6, 220);
-else if (enemies < enemyLimit / 1.25) alarm_set(6, 280);
-else if (enemyLimit != -1)			  alarm_set(6, 340); 
+else if (enemies < enemyLimit / 2)	  alarm_set(6, 100);
+else if (enemies < enemyLimit / 1.5)  alarm_set(6, 210);
+else if (enemies < enemyLimit / 1.25) alarm_set(6, 270);
+else if (enemyLimit != -1)			  alarm_set(6, 320); 
 alarm_set(7, 5);
 if (global.wave < 38) alarm_set(8, 300);

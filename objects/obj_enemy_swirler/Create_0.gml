@@ -2,7 +2,10 @@ image_index = 0;
 image_speed = 0;
 event_inherited();
 maxHp = 600;
-if (global.level == 9 && !global.hard) maxHp = 200;
+if (global.level == 9 && !global.hard) {
+	maxHp = 200;
+	global.halfCheckpoint = global.checkpoint + .5;
+}
 //maxHp = 1;
 miniboss = true;
 screenShake = 2;

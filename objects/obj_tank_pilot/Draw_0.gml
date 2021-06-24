@@ -5,7 +5,7 @@ if (debug = true) {
 	draw_circle(x, y, 255, true)
 	//DEBUG: fps
 	draw_set_font(fnt_ammunition);
-	draw_text(obj_tank_pilot.x + 32, obj_tank_pilot.y + 32, "FPS = " + string(fps));
+	draw_text(obj_tank_pilot.x + 32, obj_tank_pilot.y + 32, "FPS = " + string(fps) + " | " + string(fps_real));
 	//DEBUG: speed
 	draw_set_font(fnt_ammunition);
 	if (instance_exists(obj_tank_move)) {
@@ -61,7 +61,7 @@ if (debug = true) {
 	//DEBUG: flameHeals
 	draw_set_font(fnt_ammunition);
 	draw_text(x - view_xview + 160, y - view_yview + 20, "flameHeals = " + string(flameHeals));
-	//DEBUG: 
+	//DEBUG: spawn lists for final level
 	for (var i = 0; i < 4; i++) {
 		draw_text(x + 400, y + 40 * i, string(i));
 		draw_text(x + 415, y + 40 * i, string(global.finalMinibossesList[| i]));

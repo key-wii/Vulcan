@@ -1,1 +1,1 @@
-wheels.radiusIncrease = 500;
+if (instance_exists(wheels)) wheels.radiusIncrease = 500;

@@ -1,3 +1,4 @@
+if (global.level == 9 && !global.hard) global.halfCheckpoint = global.checkpoint + .5;
 rotDir = 1;
 if (irandom_range(-1, 1) > 0) rotDir *= -1;
 radius = 150; minRadius = 150; maxRadius = 300;

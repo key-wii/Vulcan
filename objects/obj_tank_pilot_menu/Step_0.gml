@@ -108,7 +108,7 @@ if mouse_check_button(mb_right) {
 					flame.image_xscale -= .2 * (4 - flame_timer);
 					flame.image_yscale -= .2 * (4 - flame_timer);
 				} else {
-					flame.sprite_index = spr_flame_big_hitbox;
+					flame.sprite_index = spr_flame_menu;
 					flame.image_xscale = 1;
 					flame.image_yscale = 1;
 					direction += 9 * flame_dir;

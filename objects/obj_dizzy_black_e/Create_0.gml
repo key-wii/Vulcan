@@ -4,7 +4,7 @@ grenade = false;
 black = true;
 
 wasInView = false;
-alarm_set(0, 0);
+alarm_set(0, 400);
 
 owner = id;
 spd = speed;

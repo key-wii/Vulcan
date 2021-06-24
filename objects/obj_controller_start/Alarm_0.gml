@@ -2,10 +2,9 @@
 global.checkpoint = 7;
 room_goto(room0);
 exit;*/
-/*global.level = 4;
-global.checkpoint = 10;
-room_goto(room0);
-exit;*/
+
+
+
 
 
 ini_open("saveData.ini");

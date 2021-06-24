@@ -6,7 +6,7 @@ else instance_destroy();
 event_inherited();
 preview = spr_portrait_char;
 text1 = "Bouncer attachment Launcher";
-text2 = "POW - 10 AoE";
+text2 = "Dmg - 10 AoE";
 text3 = "Speed - 131.25% (inital)";
 //text4 = "Reload - 80.00%"; //real %, less intuitive for player
 //text4 = "Reload - 100.00%"; //same as gun_g

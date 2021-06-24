@@ -3,7 +3,7 @@
     "name": "spr_swirler",
     "path": "sprites/spr_swirler/spr_swirler.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,

@@ -8,7 +8,7 @@ part_system_depth(global.P_System, layer_get_depth("Explosions"));
 if (!global.unpausing) part_particles_clear(global.P_System);
 
 alarm_set(8, 1);
-global.PauseScreenShot = sprite_create_from_surface(application_surface, 0, 0, 0, 0, false, false, 0, 0);
+//global.PauseScreenShot = sprite_create_from_surface(application_surface, 0, 0, 0, 0, false, false, 0, 0);
 room_persistent = false;
 sprite_delete(global.PauseScreenShot);
 global.unpausing = false;

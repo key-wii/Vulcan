@@ -1,10 +1,10 @@
 if (other.miniboss || other.object_index == obj_bomber_move || other.owner.id == owner) {
-	x += lengthdir_x(speed, direction);
+	/*x += lengthdir_x(speed, direction);
 	y += lengthdir_y(speed, direction);
 	with (other) {
 		x += lengthdir_x(speed, direction);
 		y += lengthdir_y(speed, direction);
-	}
+	}*/
 	exit;
 }
 

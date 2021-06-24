@@ -5,7 +5,7 @@ if (debug = true) {
 	draw_circle(x, y, 255, true)
 	//DEBUG: fps
 	draw_set_font(fnt_ammunition);
-	draw_text(obj_tank_pilot.x + 32, obj_tank_pilot.y + 32, "FPS = " + string(fps));
+	draw_text(obj_tank_pilot.x + 32, obj_tank_pilot.y + 32, "FPS = " + string(fps) + " | " + string(fps_real));
 	//DEBUG: speed
 	draw_set_font(fnt_ammunition);
 	if (instance_exists(obj_tank_move)) {

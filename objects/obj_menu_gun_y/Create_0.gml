@@ -4,7 +4,7 @@ else visible = true;
 event_inherited();
 preview = spr_menu_preview_y;
 text1 = "Simple Shells";
-text2 = "POW - 10 | 24 DPS";
+text2 = "Dmg - 10 | 24 DPS";
 text3 = "Speed - 181.25%";
 text4 = "Reload - 160.00%";
 text5 = "Effect: N/A";

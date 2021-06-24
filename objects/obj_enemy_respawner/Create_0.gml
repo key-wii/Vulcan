@@ -1,6 +1,6 @@
 event_inherited();
 maxHp = 650;
-if (global.level == 9 && !global.hard) maxHp = 450;
+if (global.level == 9 && !global.hard) maxHp = 400;
 //maxHp = 1;
 miniboss = true;
 screenShake = 2;

@@ -3,7 +3,7 @@
     "name": "spr_enemy_bomber",
     "path": "sprites/spr_enemy_bomber/spr_enemy_bomber.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,

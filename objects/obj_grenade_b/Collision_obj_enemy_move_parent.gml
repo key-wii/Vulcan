@@ -1,3 +1,16 @@
+if (other.object_index == obj_menu_char_move) {
+	with (other.owner) {
+		spin = 372;
+		charCount = 0;
+		sprite_index = dead_sprite;
+		alarm_set(9, 10);
+	}
+	speed = 1;
+	last_object = object_index;
+	instance_change(obj_explosion_grenade, true);
+	image_speed = .6;
+	exit;
+}
 if (lethal == false) exit;
 
 var controller_exists = instance_exists(controller);

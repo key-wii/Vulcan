@@ -6,7 +6,7 @@ else instance_destroy();
 event_inherited();
 preview = spr_portrait_char;
 text1 = "Rocket attachment Launcher";
-text2 = "POW - 5 + 10 AoE";
+text2 = "Dmg - 5 + 10 AoE";
 text3 = "Speed - 75.00%";
 //text4 = "Reload - 57.15%"; //real %, less intuitive for player
 //text4 = "Reload - 72.75%"; //same as gun_b

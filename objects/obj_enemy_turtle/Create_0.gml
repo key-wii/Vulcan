@@ -1,8 +1,9 @@
 event_inherited();
 maxHp = 2500;
 if (global.level == 9 && !global.hard) {
-	maxHp = 1400;
+	maxHp = 1300;
 	with (obj_enemy_fly_move_parent) leave = true;
+	global.halfCheckpoint = global.checkpoint + .5;
 }
 miniboss = true;
 screenShake = 2;

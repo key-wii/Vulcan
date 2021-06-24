@@ -25,6 +25,13 @@ hit_target = true;
 alarm_set(0, 50);
 
 var pow = 10;
+if (other.object_index == obj_menu_char_move) {
+	with (other.owner) {
+		spin = 372;
+		charCount = 0;
+	}
+	pow = 0;
+}
 with(other) {
 	if (!instance_exists(owner)) exit;
 	with (owner) {

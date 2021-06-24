@@ -26,7 +26,7 @@ var negaDmg = damage - 100 - flameHeals;
 if (combo == true && negaDmg <= 100) exit;
 if (global.just_won) exit;
 //Death
-
+if (!global.death) exit;
 if (global.level == 9) {
 	ds_list_shuffle(global.finalSpawnList);
 	if (global.checkpoint < 3 &&

@@ -35,6 +35,7 @@ else {
 		area = "Final";
 		draw_text(500 * display, 46 * display, "Wave: " + string(global.wave));
 		draw_text(500 * display, 64 * display, "waveCount: " + string(global.waveCount));
+		draw_text(500 * display, 82 * display, "halfCheckpoint: " + string(global.halfCheckpoint));
 	}
 	draw_text(500 * display, 10 * display, "Level: " + string(area));
 }

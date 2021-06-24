@@ -1,9 +1,9 @@
 if (other.miniboss || other.owner.id == owner) {
-	direction += 180;
+	/*direction += 180;
 	x += lengthdir_x(point_distance(other.x, other.y, x, y), point_direction(other.x, other.y, x, y));
 	y += lengthdir_y(point_distance(other.x, other.y, x, y), point_direction(other.x, other.y, x, y));
 	x += lengthdir_x(speed, direction);
-	y += lengthdir_y(speed, direction);
+	y += lengthdir_y(speed, direction);*/
 	exit;
 }
 

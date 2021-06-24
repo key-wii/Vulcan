@@ -1,11 +1,11 @@
-if (other.miniboss || other.object_index == obj_bomber_move || other.owner.id == owner) {
-	x += lengthdir_x(spd, direction);
+if (/*other.miniboss || */other.object_index == obj_bomber_move || other.owner.id == owner) {
+	/*x += lengthdir_x(spd, direction);
 	y += lengthdir_y(spd, direction);
 	with (other) {
 		x += lengthdir_x(spd, direction);
 		y += lengthdir_y(spd, direction);
 	}
-	if (alarm_get(9) != 2 && alarm_get(9) != 1) alarm_set(9, 2);
+	if (alarm_get(9) != 2 && alarm_get(9) != 1) alarm_set(9, 2);*/
 	exit;
 }
 

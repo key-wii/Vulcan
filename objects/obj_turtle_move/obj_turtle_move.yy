@@ -3,7 +3,7 @@
     "name": "spr_enemy_turtle",
     "path": "sprites/spr_enemy_turtle/spr_enemy_turtle.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,
