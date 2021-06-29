@@ -1,7 +1,7 @@
 if (area == 0) exit;
 if (area == 101)
 	global.waveEndCombo = -9999;
-else global.waveEndCombo = 20;
+else global.waveEndCombo = 10;
 
 if (area == 9) {
 	global.checkpoint = 0;

@@ -36,7 +36,11 @@
     {"instances":[],"visible":true,"depth":1000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemy_Bullets_Front","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":1100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemy_UI","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Bombers","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"instances":[],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_killer_s","path":"objects/obj_enemy_killer_s/obj_enemy_killer_s.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2304.0,"y":1696.0,"resourceVersion":"1.0","name":"inst_581B01B7","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_killer_r","path":"objects/obj_enemy_killer_r/obj_enemy_killer_r.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2496.0,"y":2336.0,"resourceVersion":"1.0","name":"inst_5BD20933","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemy_killer_b","path":"objects/obj_enemy_killer_b/obj_enemy_killer_b.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1376.0,"y":1856.0,"resourceVersion":"1.0","name":"inst_665BA95","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":true,"objectId":{"name":"obj_wall1","path":"objects/obj_wall1/obj_wall1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":768.0,"y":577.0,"resourceVersion":"1.0","name":"inst_74ADED9B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":true,"objectId":{"name":"obj_wall1","path":"objects/obj_wall1/obj_wall1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":577.0,"resourceVersion":"1.0","name":"inst_55C35A98","tags":[],"resourceType":"GMRInstance",},
@@ -1368,6 +1372,9 @@
     {"name":"inst_6790FF6E","path":"rooms/room0/room0.yy",},
     {"name":"inst_79A306E9","path":"rooms/room0/room0.yy",},
     {"name":"inst_313CCDCD","path":"rooms/room0/room0.yy",},
+    {"name":"inst_581B01B7","path":"rooms/room0/room0.yy",},
+    {"name":"inst_5BD20933","path":"rooms/room0/room0.yy",},
+    {"name":"inst_665BA95","path":"rooms/room0/room0.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

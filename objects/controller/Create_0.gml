@@ -34,6 +34,15 @@ if (room != room_menu && room != room_pause && room != room_start && room != roo
 		devil_refill = (max_trigger / 100) * .375;
 		global.max_trigger = max_trigger;
 	}
+} else {
+	global.max_trigger = 200;
+	ini_open("saveData.ini");
+	if (ini_read_real("Bosses Beat", "boss 2 beat", false)) global.max_trigger += 100;
+	if (ini_read_real("Bosses Beat", "boss 3 beat", false)) global.max_trigger += 100;
+	if (ini_read_real("Bosses Beat", "boss 4 beat", false)) global.max_trigger += 100;
+	if (ini_read_real("Bosses Beat", "boss 5 beat", false)) global.max_trigger += 100;
+	ini_close();
+	if (global.max_trigger > 500) global.max_trigger = 500;
 }
 
 if (room == room0 && global.level == 9 && global.checkpoint >= 5) {

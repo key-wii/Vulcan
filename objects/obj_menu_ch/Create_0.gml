@@ -1,3 +1,8 @@
+ini_open("saveData.ini");
+var area_complete1 = ini_read_real("Bosses Beat", "boss 1 beat", false);
+ini_close();
+if (area_complete1) instance_destroy();
+
 event_inherited();
 ch = 1;
 sprite_index = spr_chapter_hit;

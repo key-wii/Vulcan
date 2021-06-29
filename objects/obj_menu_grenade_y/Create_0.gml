@@ -16,3 +16,4 @@ text5 = "Explosion: Any impact";
 text = text1 + text2 + text3 + text4 + text5;
 
 col = c_yellow;
+launcher = true;

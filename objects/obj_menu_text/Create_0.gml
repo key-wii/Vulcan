@@ -43,3 +43,11 @@ for (i = 0; i <= 3; i++) {
 	square.yrange1 = 0;
 	square.yrange2 = 3;
 }
+
+default_col = c_gray;
+col = default_col;
+hover = false;
+launcher = false;
+ini_open("saveData.ini");
+chargeUnlocked = ini_read_real("Bosses Beat", "boss 1 beat", false);
+ini_close();

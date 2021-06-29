@@ -13,4 +13,7 @@ with (obj_menu_text) {
 	text = default_text;
 	textHeight = string_height(text) + 2;
 	charCount = 0;
+	col = default_col;
+	hover = false;
+	launcher = false;
 }

@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"scanline","path":"sprites/scanline/scanline.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "scanline",
     "tags": [],
     "resourceType": "GMSequence",
   },

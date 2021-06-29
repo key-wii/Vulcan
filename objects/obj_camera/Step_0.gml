@@ -5,6 +5,19 @@ if (instance_exists(target)) {
 	cameraX = target.x - (cameraWidth / 2);
 	cameraY = target.y - (cameraHeight / 2);
 }
+
+//Don't screenshake too much if camera is zoomed out a lot
+if (cameraWidth > 3000) {
+	if (cameraShake > 0) cameraShake = 1;
+	if (flameShake > 0) flameShake = 1;
+} else if (cameraWidth > 2000) {
+	if (cameraShake > 0) cameraShake = floor(cameraShake / 4);
+	if (flameShake > 0) flameShake = floor(flameShake / 4);
+} else if (cameraWidth > 1500) {
+	if (cameraShake > 0) cameraShake = floor(cameraShake / 2);
+	if (flameShake > 0) flameShake = floor(flameShake / 2);
+}
+
 if (cameraShake == 0) {
 	cameraX = clamp(cameraX, 0, room_width - cameraWidth);
 	cameraY = clamp(cameraY, 0, room_height - cameraHeight);

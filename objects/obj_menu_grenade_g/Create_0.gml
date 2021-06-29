@@ -16,3 +16,4 @@ text5 = "Explosion: 2nd enemy impact";
 text = text1 + text2 + text3 + text4 + text5;
 
 col = c_lime;
+launcher = true;

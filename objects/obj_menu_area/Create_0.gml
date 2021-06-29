@@ -66,3 +66,11 @@ ini_open("saveData.ini");
 	wait = 0;
 }
 ini_close();
+
+if (area != 9) waves = 33;
+hovering = false;
+up = true;
+yyy = 0;
+maxWiggle = 40;
+pause = 0;
+alarm_set(9, 1);

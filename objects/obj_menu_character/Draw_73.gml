@@ -1,7 +1,8 @@
 if (!hovering || spin > 0) exit;
 
 var yy = sprite_height + (sprite_get_height(spBox) / 2) + 96;
-draw_sprite_stretched(spBox, 0, x - boxWidth / 2, y - yy, boxWidth * talkWidth, sprite_get_height(spBox));
+if (y < room_height / 2) yy /= -4;
+draw_9slice(x - boxWidth / 2, y - yy, boxWidth * talkWidth, sprite_get_height(spBox), spBox, 0);
 
 if (talkWidth < 1) exit;
 draw_set_font(fnt_pause);
@@ -33,8 +34,8 @@ if (charCount >= textPart1len) {
 }
 var xxx = x - ((boxWidth / 2) - 5);
 var yyy = y - yy + 2;
-draw_text_ext(xxx, yyy + textHeight * 0, textPart1, textHeight, boxWidth - 10);
-draw_text_ext(xxx, yyy + textHeight * 1, textPart2, textHeight, boxWidth - 10);
-draw_text_ext(xxx, yyy + textHeight * 2, textPart3, textHeight, boxWidth - 10);
-draw_text_ext(xxx, yyy + textHeight * 3, textPart4, textHeight, boxWidth - 10);
-draw_text_ext(xxx, yyy + textHeight * 4, textPart5, textHeight, boxWidth - 10);
+draw_text_ext(xxx, yyy + textHeight * 0, textPart1, textHeight, boxWidth);
+draw_text_ext(xxx, yyy + textHeight * 1, textPart2, textHeight, boxWidth);
+draw_text_ext(xxx, yyy + textHeight * 2, textPart3, textHeight, boxWidth);
+draw_text_ext(xxx, yyy + textHeight * 3, textPart4, textHeight, boxWidth);
+draw_text_ext(xxx, yyy + textHeight * 4, textPart5, textHeight, boxWidth);

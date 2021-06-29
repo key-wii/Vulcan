@@ -18,6 +18,7 @@ if (area == 9 && (spin > 0 || size > 0)) {
 		size += clamp(diff, 4, 8);
 		if (size > ideal) size = ideal;
 	}
+	if (obj_fade_screen.i == 7) exit;
 	if (!surface_exists(screen_surface)) screen_surface = surface_create(1350 * display * 1.25, 1350 * display * 1.25);
 	surface_set_target(screen_surface);
 	var width = surface_get_width(screen_surface), height = surface_get_height(screen_surface);

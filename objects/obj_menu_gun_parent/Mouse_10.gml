@@ -23,4 +23,7 @@ with (obj_menu_text) {
 	text = ttext;
 	textHeight = string_height(ttext) + 2;
 	charCount = 0;
+	col = ccol;
+	hover = true;
+	launcher = other.launcher;
 }

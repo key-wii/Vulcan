@@ -4,7 +4,7 @@ if (level == 1 || level == 2) {
 }
 else if (level == 3) {
 	waves = 10;
-	levelWaveEndCombo = 15;
+	levelWaveEndCombo = 10;
 }
 else levelWaveEndCombo = 0;
 if (level == 2) {
