@@ -3,6 +3,8 @@ y = dh / 2;
 
 dw = display_get_gui_width();
 dh = display_get_gui_height();
+/*dw = 1350;
+dh = 900;*/
 
 //draw_self();
 draw_sprite(sprite_index, image_index, dw / 2, dh / 2);

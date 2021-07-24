@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"15c92334-70ca-4c45-a7bb-c44796362cdb","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"15c92334-70ca-4c45-a7bb-c44796362cdb","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"LayerId":{"name":"acd27fea-402e-40c7-bfb1-03b178ced7f6","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spPlayerTank_grenade","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","name":"15c92334-70ca-4c45-a7bb-c44796362cdb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8b042721-04fc-4ffc-83e9-9c3254308074","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8b042721-04fc-4ffc-83e9-9c3254308074","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"LayerId":{"name":"acd27fea-402e-40c7-bfb1-03b178ced7f6","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spPlayerTank_grenade","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","name":"8b042721-04fc-4ffc-83e9-9c3254308074","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"73097e2f-3266-4c55-93fa-960e77c874b7","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"73097e2f-3266-4c55-93fa-960e77c874b7","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"LayerId":{"name":"acd27fea-402e-40c7-bfb1-03b178ced7f6","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spPlayerTank_grenade","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","name":"73097e2f-3266-4c55-93fa-960e77c874b7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1e87ef2d-a982-4265-bbe2-60af333e97e0","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1e87ef2d-a982-4265-bbe2-60af333e97e0","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"LayerId":{"name":"acd27fea-402e-40c7-bfb1-03b178ced7f6","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spPlayerTank_grenade","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","name":"1e87ef2d-a982-4265-bbe2-60af333e97e0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spPlayerTank_grenade","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b0d80c2f-7a18-4fc0-915d-28947eb3a7ab","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"15c92334-70ca-4c45-a7bb-c44796362cdb","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"f2449a13-c4ed-4457-bd87-1ec4da215f49","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b042721-04fc-4ffc-83e9-9c3254308074","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d3173f26-41f6-4aa0-98c7-9b0cb7cbd268","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"73097e2f-3266-4c55-93fa-960e77c874b7","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"28965472-005c-4c0d-b916-e11117d4342f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1e87ef2d-a982-4265-bbe2-60af333e97e0","path":"sprites/spPlayerTank_grenade/spPlayerTank_grenade.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

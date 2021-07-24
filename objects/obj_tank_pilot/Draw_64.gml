@@ -12,32 +12,74 @@ for (var i = 0; i < instance_number(obj_enemy_move_parent); i++) {
 	}
 }*/
 
-if (debug == true) with (controller) {
+if (debug) with (controller) {
 	if (drawStats) {
 		draw_set_font(fnt_ammunition);
-		draw_text(1200 * display, 100, string(minutes) + " : " + string(seconds) + " : " + string(steps));
-		draw_text(1200 * display, 160, "kills: " + string(kills));
+		draw_text(1200 * display, 40, "Time: " + string(global.time));
+		draw_text(1200 * display, 100, string(minutes) + " : " + string(seconds));
+		draw_text(1200 * display, 160, "Kills: " + string(global.kills));
+		draw_text(1200 * display, 220, "Deaths: " + string(global.deaths));
+		draw_text(1200 * display, 280, "Damage: " + string(global.damageTaken));
 	}
 }
 
-var lv = global.level;
-draw_set_font(fnt_ammunition);
-draw_text(500 * display, 28 * display, "Checkpoint: " + string(global.checkpoint));
-draw_set_font(fnt_ammunition);
-if (lv > 0 && lv <= 3) draw_text(500 * display, 10 * display, "Level: " + string(lv));
-else {
-	var area = "";
-		 if (lv == 4) area = "Dragon";
-	else if (lv == 5) area = "Dizzy";
-	else if (lv == 6) area = "Shield";
-	else if (lv == 7) area = "Spiked";
-	else if (lv == 9) {
-		area = "Final";
-		draw_text(500 * display, 46 * display, "Wave: " + string(global.wave));
-		draw_text(500 * display, 64 * display, "waveCount: " + string(global.waveCount));
-		draw_text(500 * display, 82 * display, "halfCheckpoint: " + string(global.halfCheckpoint));
+if (room != room_menu) {
+	var lv = global.level;
+	draw_set_font(fnt_ammunition);
+	if (lv != 9) draw_text(500 * display, 28 * display, "Checkpoint: " + string(global.checkpoint));
+	if (lv > 0 && lv <= 3) {
+		draw_text(500 * display, 10 * display, "Level: " + string(lv));
+		var complete = false;
+		if (lv == 1) {
+			area = "Flames";
+			if (lvBeat1) complete = true;
+		} else if (lv == 2) { 
+			area = "Candles";
+			if (lvBeat2) complete = true;
+		} else if (lv == 3) { 
+			area = "Grenades";
+			if (lvBeat3) complete = true;
+		}
+		if (complete) draw_text((500 * display) + string_width("Level: " + string(lv)), 10 * display, " ★ Complete!");
+	} else {
+		var area = "";
+		var complete = false;
+		if (lv == 4) {
+			area = "Dragon";
+			if (areaBeat2) complete = true;
+		} else if (lv == 5) { 
+			area = "Dizzy";
+			if (areaBeat3) complete = true;
+		} else if (lv == 6) { 
+			area = "Shield";
+			if (areaBeat4) complete = true;
+		} else if (lv == 7) { 
+			area = "Spiked";
+			if (areaBeat5) complete = true;
+		} else if (lv == 9) {
+			area = "Final";
+			if (debug) {
+				draw_text(500 * display, 10 * display, "Level: " + area);
+				draw_text(500 * display, 46 * display, "Wave: " + string(global.wave));
+				draw_text(500 * display, 64 * display, "waveCount: " + string(global.waveCount));
+				draw_text(500 * display, 82 * display, "halfCheckpoint: " + string(global.halfCheckpoint));
+			} else {
+				if (global.wave < 45) {
+					draw_text(500 * display, 10 * display, "Level: " + area);
+					draw_text(500 * display, 28 * display, "Wave: " + string(global.wave));
+					for (var i = 0; i < global.waveCount - 1; i++)
+						draw_text(500 * display + string_width("Wave: " + string(global.wave) + " ") + string_width("▮") * i, 28 * display, "▮");
+					draw_text(500 * display, 46 * display, "Checkpoint: " + string(global.checkpoint + global.halfCheckpoint + 1));
+				}
+			}
+			if (areaBeat9) complete = true;
+		}
+		if (lv != 9) draw_text(500 * display, 10 * display, "Level: " + area);
+		draw_set_color(c_yellow);
+		var show = true;
+		if (lv == 9 && global.wave >= 45) show = false;
+		if (complete && show) draw_text((500 * display) + string_width("Level: " + area), 10 * display, " ★ Complete!");
 	}
-	draw_text(500 * display, 10 * display, "Level: " + string(area));
 }
 /*draw_set_font(fnt_kill_count_5);
 draw_set_color(c_orange);

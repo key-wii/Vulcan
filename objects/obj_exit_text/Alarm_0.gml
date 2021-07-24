@@ -5,6 +5,7 @@ if (room == room_pause) {
 	with (obj_menu_portrait) col = c_teal;
 } else if (tutorial) image_index = 1;
 else if (!menu) image_index = 2;
+draw_set_font(fnt_exit);
 if (menu) {
 	text1 = "Exit Vulcan?";
 	text2 = "";

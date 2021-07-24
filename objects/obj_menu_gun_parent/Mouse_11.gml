@@ -3,6 +3,7 @@ with (obj_menu_portrait) {
 	sprite_index = default_sprite;
 	image_speed = 0;
 	col = c_teal;
+	if (instance_exists(obj_menu_gun_upgrades_parent)) obj_menu_gun_upgrades_parent.visible = true;
 }
 with (obj_menu_text) {
 	text1 = default_text1;
@@ -16,4 +17,5 @@ with (obj_menu_text) {
 	col = default_col;
 	hover = false;
 	launcher = false;
+	flame = false;
 }

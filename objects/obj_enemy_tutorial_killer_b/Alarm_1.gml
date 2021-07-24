@@ -5,7 +5,7 @@ if (killers > 24) audio_sound_gain(snd_shoot_e, .01, 90);
 if (killers > 32) audio_sound_gain(snd_shoot_e, .006, 90);
 if (killers > 40) audio_sound_gain(snd_shoot_e, .003, 90);
 if (killers > 48) audio_sound_gain(snd_shoot_e, .002, 90);
-if (random_range(0, 2) >= 1) audio_play_sound(snd_shoot_e, 0, false);
+if (random_range(0, 2) >= 1) sound_machine(snd_shoot_e, x, y);
 else alarm_set(11, 1);
 var bull = instance_create_layer(x, y, "Enemy_Bullets", obj_bouncer_e);
 bull.direction = direction;

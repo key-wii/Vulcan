@@ -7,4 +7,5 @@ with (spawn) {
 	rotation = 3;
 	alarm_set(0, 1980);
 	//alarm_set(0, 1);
+	sound_machine(snd_final_spawn, x, y);
 }

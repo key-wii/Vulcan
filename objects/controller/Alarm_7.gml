@@ -15,4 +15,11 @@ with (obj_tank_pilot) if (mouse_check_button(mb_right))
 room_set_height(room_pause, obj_camera.cameraHeight);
 room_set_width(room_pause, obj_camera.cameraWidth);
 
+ini_open("saveData.ini");
+ini_write_real("Options", "ever paused", true);
+ini_close();
+global.everPaused = true;
+
+audio_pause_sound(global.bgm);
+
 room_goto(room_pause);

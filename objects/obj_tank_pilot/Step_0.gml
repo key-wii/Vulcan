@@ -62,7 +62,9 @@ if mouse_check_button(mb_right) {
 	if(windup_flame == 0) {
 		if(!(weapon == 3)) {
 			if(flaming == true) {
-				if (sprite_index != spPlayerTankFl) sprite_index = spPlayerTankFl;
+				if (!got_heart && bull_hit_count >= 60) sprite_index = spPlayerTankFl_hyper;
+				else if (!got_heart && bull_hit_count >= 45) sprite_index = spPlayerTankFl_almostHyper;
+				else if (sprite_index != spPlayerTankFl && !got_heart) sprite_index = spPlayerTankFl;
 				var wheels_exist = instance_exists(obj_tank_move);
 				if(wheels_exist) {
 					with(obj_tank_move) instance_destroy();
@@ -132,7 +134,7 @@ if mouse_check_button(mb_right) {
 				if(!flame_wheels_exist) {
 					instance_create_layer(x + 0, y + 0, "Player", obj_tank_move_flame);
 				}
-				if (used_charge == false && flame_timer > 3 && !uncharged_press) {
+				if (used_charge == false && flame_timer > 3 && !uncharged_press && !got_heart) {
 					devil_trigger -= 100;
 					charges -= 1;
 					used_charge = true;

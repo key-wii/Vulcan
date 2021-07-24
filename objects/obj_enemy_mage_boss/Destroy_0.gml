@@ -5,7 +5,11 @@ expl.splitMore = 0;
 
 if (global.level == 9) with (obj_spawner) {
 	bosses--;
-	if (bosses == 0) { alarm_set(6, 1); instance_destroy(obj_enemy_hive); }
+	if (bosses == 0) { 
+		alarm_set(6, 1); 
+		instance_destroy(obj_enemy_hive);
+		ds_list_add(global.minibossesBeat, 2);
+	}
 } else {
 	with (obj_spawner) {
 		bosses--;

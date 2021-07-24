@@ -1,4 +1,4 @@
-if (grenading) exit;
+if (cutscene || grenading) exit;
 if(weapon_wait == 0) {
 	weapon += 1;
 	if(weapon == 3) {

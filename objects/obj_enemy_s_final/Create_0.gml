@@ -1,4 +1,5 @@
 event_inherited();
+image_speed = .08;
 wheels.too_fast = true;
 alarm_set(10, 40);
 maxHp = 20;

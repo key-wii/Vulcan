@@ -1,6 +1,6 @@
 event_inherited();
 maxHp = 900;
-if (global.level == 9 && !global.hard) { maxHp = 350; with (obj_spawner) bosses = 2; }
+if (global.level == 9 && !global.hard) { maxHp = 300; with (obj_spawner) bosses = 2; }
 miniboss = true;
 screenShake = 2;
 alarm_set(10, 5);
@@ -38,3 +38,5 @@ with (obj_camera.target) {
 		y = obj_tank_pilot.y + midYlen;
 	}
 }
+
+prev_dir = direction;

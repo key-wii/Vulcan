@@ -63,8 +63,10 @@ with (bull) alarm_set(0, 500);
 
 with (particleMachine) owner = id;
 instance_destroy(wheels);
-if (childrenLeft == 0 && damage >= maxHp)
+if (childrenLeft == 0 && damage >= maxHp) {
+	global.kills++;
 	expl = instance_create_layer(x, y, "Enemy", obj_explosion_large);
+}
 else audio_play_sound(snd_not_dead, 0, 0);
 
 var corpse = instance_create_layer(x, y, "Floor", obj_enemy_corpse);
@@ -75,8 +77,10 @@ instance_destroy(blink);
 
 if (childrenLeft == 0) {
 	if (instance_number(obj_enemy_slime_boss_spiked) == 1) {
-	if (global.level == 9) with (obj_spawner) alarm_set(6, 1);
-	else with (obj_spawner) {
+	if (global.level == 9) {
+		with (obj_spawner) alarm_set(6, 1);
+		ds_list_add(global.minibossesBeat, 4);
+	} else with (obj_spawner) {
 			timeline_index = timelineSpkd_wave_wait2;
 			timeline_loop = false;
 			timeline_position = 0;

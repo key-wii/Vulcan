@@ -1,7 +1,7 @@
 event_inherited();
 maxHp = 2900;
 if (global.level == 9 && !global.hard) {
-	maxHp = 1900;
+	maxHp = 1400;
 	with (obj_enemy_fly_move_parent) leave = true;
 	global.halfCheckpoint = global.checkpoint + .5;
 }

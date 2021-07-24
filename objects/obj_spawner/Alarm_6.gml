@@ -56,7 +56,7 @@ if (global.wave == 1) {
 } else if (global.wave == 5)  { 
 	enemyLimit = -1;
 	global.waveCount = 0;
-	switch (global.finalMinibossesList[| 1]) {
+	switch (global.finalMinibossesList[| 0]) {
 		case 1: timeline_index = timelineDrag_waveMiniboss2; break;
 		case 2: timeline_index = timelineDizz_waveMiniboss2; break;
 		case 3: timeline_index = timelineShld_waveMiniboss2; break;
@@ -178,7 +178,7 @@ if (global.wave == 1) {
 } else if (global.wave == 15)  { 
 	enemyLimit = -1;
 	global.waveCount = 0;
-	switch (global.finalMinibossesList[| 2]) {
+	switch (global.finalMinibossesList[| 0]) {
 		case 1: timeline_index = timelineDrag_waveMiniboss2; break;
 		case 2: timeline_index = timelineDizz_waveMiniboss2; break;
 		case 3: timeline_index = timelineShld_waveMiniboss2; break;
@@ -300,7 +300,7 @@ if (global.wave == 1) {
 } else if (global.wave == 25)  { 
 	enemyLimit = -1;
 	global.waveCount = 0;
-	switch (global.finalMinibossesList[| 3]) {
+	switch (global.finalMinibossesList[| 0]) {
 		case 1: timeline_index = timelineDrag_waveMiniboss2; break;
 		case 2: timeline_index = timelineDizz_waveMiniboss2; break;
 		case 3: timeline_index = timelineShld_waveMiniboss2; break;
@@ -526,11 +526,11 @@ if (global.waveCount == 8) {
 	ds_list_shuffle(global.finalSpawnList);
 }
 
-	 if (enemies < enemyLimit / 4)	  alarm_set(6, 30);
-else if (enemies < enemyLimit / 3)	  alarm_set(6, 60);
-else if (enemies < enemyLimit / 2)	  alarm_set(6, 100);
-else if (enemies < enemyLimit / 1.5)  alarm_set(6, 210);
-else if (enemies < enemyLimit / 1.25) alarm_set(6, 270);
-else if (enemyLimit != -1)			  alarm_set(6, 320); 
+	 if (enemies < enemyLimit / 4)	  alarm_set(6, 10);
+else if (enemies < enemyLimit / 3)	  alarm_set(6, 20);
+else if (enemies < enemyLimit / 2)	  alarm_set(6, 30);
+else if (enemies < enemyLimit / 1.5)  alarm_set(6, 40);
+else if (enemies < enemyLimit / 1.25) alarm_set(6, 50);
+else if (enemyLimit != -1)			  alarm_set(6, 60); 
 alarm_set(7, 5);
 if (global.wave < 38) alarm_set(8, 300);

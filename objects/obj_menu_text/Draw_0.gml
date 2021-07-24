@@ -29,8 +29,9 @@ if (charCount >= textPart1len) {
 draw_set_color(col);
 draw_text_ext(x - 293, y - 96 + textHeight * 0, textPart1, textHeight, boxWidth - 10); draw_set_color(c_white);
 draw_text_ext(x - 293, y - 96 + textHeight * 1, textPart2, textHeight, boxWidth - 10); draw_set_color(c_white);
+if (flame) draw_set_color(c_gray);
 draw_text_ext(x - 293, y - 96 + textHeight * 2, textPart3, textHeight, boxWidth - 10); draw_set_color(c_white);
-if (!hover || launcher) draw_set_color(c_gray);
+if (!hover || launcher || flame) draw_set_color(c_gray);
 draw_text_ext(x - 293, y - 96 + textHeight * 3, textPart4, textHeight, boxWidth - 10); draw_set_color(c_white);
-if (!hover || !chargeUnlocked) draw_set_color(c_gray);
+if (!hover || flame) draw_set_color(c_gray);
 draw_text_ext(x - 293, y - 96 + textHeight * 4, textPart5, textHeight, boxWidth - 10); draw_set_color(c_white);

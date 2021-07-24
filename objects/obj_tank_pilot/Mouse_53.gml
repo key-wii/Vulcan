@@ -1,5 +1,5 @@
 if (!flaming && grenadeCharge > grenadeFullCharge) exit;
-if (grenading || devilSwinging || clicked_ui) exit;
+if (cutscene || grenading || devilSwinging || clicked_ui) exit;
 shielding = false
 if(shielding = false) {
 	//change direction if flaming, otherwise shoot

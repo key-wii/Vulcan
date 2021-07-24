@@ -2,7 +2,7 @@ var player_exists = instance_exists(obj_tank_pilot);
 if (!player_exists) exit;
 xx = obj_tank_pilot.x + 500; yy = obj_tank_pilot.y - 45;
 if (xx + 20 < 2330 && xx - 20 > 550 && yy + 20 < 2140 && yy - 20 > 355) {
-	audio_play_sound(snd_spawn_killer, 0, false);
+	sound_machine(snd_spawn_killer, xx, yy);
 	var spawn = instance_create_layer(xx, yy, "Enemy", obj_enemy_spawn);
 	spawn.enemy = obj_enemy_tutorial_killer_s;
 	spawn.set_dir = 225;

@@ -2,8 +2,10 @@
 global.checkpoint = 7;
 room_goto(room0);
 exit;*/
-
-
+/*global.level = -1;
+global.checkpoint = 0;
+room_goto(room0);
+exit;*/
 
 
 

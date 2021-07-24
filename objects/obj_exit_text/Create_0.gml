@@ -23,6 +23,8 @@ textPart4 = "";
 
 dw = display_get_gui_width();
 dh = display_get_gui_height();
+/*dw = 1350;
+dh = 900;*/
 x_yes = dw / 2 - 32;
 y_yes = dh / 2 - sprite_height / 2 + textHeight * 4 - 5;
 x_no = dw / 2 + 32;

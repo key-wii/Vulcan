@@ -7,7 +7,7 @@ text1 = "Bouncer Bullets";
 text2 = "Dmg - 10 | 15 DPS";
 text3 = "Speed - 100.00% (inital)";
 text4 = "Reload - 100.00%";
-text5 = "Effect: Speeds up on impact";
+text5 = "Effect: Speeds up on impacts";
 text = text1 + text2 + text3 + text4 + text5;
 
 col = c_lime;

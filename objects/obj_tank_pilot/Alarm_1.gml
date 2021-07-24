@@ -1,3 +1,4 @@
+if (cutscene) exit;
 if (preDevilSwing && devil_trigger >= 600 && bull_hit_count < 45) {
 	devil_trigger -= 400;
 	charges -= 4;

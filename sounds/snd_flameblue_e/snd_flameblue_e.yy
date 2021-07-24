@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.09,
+  "volume": 0.07,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_flameblue_e",
-  "duration": 1.841146,
+  "duration": 1.836146,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

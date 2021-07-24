@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "Arzni_5.mp3",
-  "duration": 106.009895,
+  "duration": 106.0049,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

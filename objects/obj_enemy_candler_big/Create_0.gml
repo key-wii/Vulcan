@@ -19,3 +19,5 @@ if (player_exists) {
 	xx = obj_tank_pilot.x;
 	yy = obj_tank_pilot.y;
 }
+
+prev_dir = direction;

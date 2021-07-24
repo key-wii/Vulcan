@@ -1,0 +1,1 @@
+global.kills += 3;

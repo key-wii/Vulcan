@@ -1,3 +1,4 @@
+global.kills++;
 var corpse = instance_create_layer(x, y, "Floor", obj_enemy_corpse);
 corpse.sprite_index = dead_sprite;
 corpse.direction = direction;

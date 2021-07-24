@@ -3,4 +3,4 @@ pow = 1;
 owner = id;
 if (visible) image_alpha = .7;
 
-alarm_set(0, 37);
+alarm_set(0, 25);

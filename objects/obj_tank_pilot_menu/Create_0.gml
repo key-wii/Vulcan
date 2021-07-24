@@ -64,6 +64,7 @@ shieldUnlocked = false;
 spikesUnlocked = false;
 lastSpikes = 10;
 chargeUnlocked = true;
+cutscene = false;
 
 debug = false;
 debug_lock = 2;

@@ -84,10 +84,10 @@ image_angle = direction;
 draw_self();
 event_inherited();
 
-if (spikesUnlocked) {
-		 if (weapon == 0) var color = spr_enemy_spike_y;
-	else if (weapon == 1) var color = spr_enemy_spike_g;
-	else if (weapon == 2) var color = spr_enemy_spike_b;
+if (spikesUnlocked && !cutscene) {
+			 if (weapon == 0) var color = spr_enemy_spike_y;
+		else if (weapon == 1) var color = spr_enemy_spike_g;
+		else if (weapon == 2) var color = spr_enemy_spike_b;
 	var ddir, xx, yy;
 	for (i = lastSpikes * 36 - 36; i > -36; i -= 36) {
 		ddir = direction + i;

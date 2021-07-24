@@ -6,6 +6,8 @@ with (obj_spawner) {
 	timeline_position = 0;
 	timeline_running = true;
 }
+var heart = instance_create_layer(x, y, "Enemy", obj_heart);
+heart.upgrade = 1;
 
 instance_destroy(flame);
 instance_destroy(wheels);

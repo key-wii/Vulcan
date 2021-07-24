@@ -1,7 +1,9 @@
 with (particleMachine) owner = id;
 instance_destroy(wheels);
-if (childrenLeft == 0 && damage >= maxHp)
+if (childrenLeft == 0 && damage >= maxHp) {
+	global.kills++;
 	expl = instance_create_layer(x, y, "Enemy", obj_explosion_large);
+}
 else audio_play_sound(snd_not_dead, 0, 0);
 
 var corpse = instance_create_layer(x, y, "Floor", obj_enemy_corpse);

@@ -20,7 +20,9 @@ else {
 		timeline_position = 0;
 		timeline_running = true;
 	}
-instance_create_layer(x, y, "UI", obj_spawner_corners);
+	instance_create_layer(x, y, "UI", obj_spawner_corners);
+	var heart = instance_create_layer(x, y, "Enemy", obj_heart);
+	heart.upgrade = 4;
 }
 instance_destroy(obj_enemy_hive);
 

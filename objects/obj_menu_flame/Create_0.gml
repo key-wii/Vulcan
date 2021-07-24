@@ -7,9 +7,9 @@ if (chargeUnlocked) {
 	sprite_index = spr_menu_flame_upgraded;
 	text1 = "Flamethrower";
 	text2 = "Dmg - 10 | 600 DPS";
-	text3 = "Swing - 1 Charge";
-	text4 = "Charged Swing - 2 Charges";
-	text5 = "Ultra Swing - 6 Charges";
+	text3 = "Hold left click to charge swing";
+	text4 = "After letting go, immediately";
+	text5 = "left click for an Ultra Swing";
 } else {
 	text1 = "Flamethrower";
 	text2 = "Dmg - 10 | 600 DPS";
@@ -20,3 +20,4 @@ if (chargeUnlocked) {
 text = text1 + text2 + text3 + text4 + text5;
 
 col = c_orange;
+flame = true;

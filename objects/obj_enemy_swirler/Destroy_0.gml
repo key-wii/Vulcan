@@ -14,6 +14,8 @@ else {
 		timeline_position = 0;
 		timeline_running = true;
 	}
+	var heart = instance_create_layer(x, y, "Enemy", obj_heart);
+	heart.upgrade = 3;
 }
 instance_destroy(obj_enemy_hive);
 if (instance_exists(obj_enemy_dizzy_boss_rematch)) {

@@ -59,19 +59,32 @@ tail_index = 0;
 dir_changed = false;
 kills = 0;
 clicked_ui = false;
+cutscene = false;
+got_heart = false;
+post_heart = 0;
 
 ini_open("saveData.ini");
-dizzyUnlocked = ini_read_real("Bosses Beat", "boss final beat", false);
+lvBeat1 = ini_read_real("Levels Beat", "level 1 beat", false);
+lvBeat2 = ini_read_real("Levels Beat", "level 2 beat", false);
+lvBeat3 = ini_read_real("Levels Beat", "level 3 beat", false);
+
+areaBeat3 = ini_read_real("Bosses Beat", "boss 3 beat", false);
+areaBeat2 = ini_read_real("Bosses Beat", "boss 2 beat", false);
+areaBeat4 = ini_read_real("Bosses Beat", "boss 4 beat", false);
+areaBeat5 = ini_read_real("Bosses Beat", "boss 5 beat", false);
+areaBeat9 = ini_read_real("Bosses Beat", "boss final beat", false);
+
+dizzyUnlocked = areaBeat3
 if (dizzyUnlocked) dizzyUnlocked = ini_read_real("Options", "dizzy", true);
 dizzy_shoot = 0;
 dizzy_reload = -55;
-dragonUnlocked = ini_read_real("Bosses Beat", "boss final beat", false);
+dragonUnlocked = areaBeat2
 if (dragonUnlocked) dragonUnlocked = ini_read_real("Options", "dragon", true);
 dragon_shoot = 0;
 dragon_reload = -60;
-shieldUnlocked = ini_read_real("Bosses Beat", "boss final beat", false);
+shieldUnlocked = areaBeat4
 if (shieldUnlocked) shieldUnlocked = ini_read_real("Options", "shield", true);
-spikesUnlocked = ini_read_real("Bosses Beat", "boss final beat", false);
+spikesUnlocked = areaBeat5
 if (spikesUnlocked) spikesUnlocked = ini_read_real("Options", "spikes", true);
 lastSpikes = 10;
 

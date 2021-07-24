@@ -1,4 +1,4 @@
-if (!flaming && !flame_end && !grenading && shoot_rotate == 0) {
+if (!flaming && !flame_end && !grenading && shoot_rotate == 0 && !cutscene) {
 	var ex, ey;
 	ex = mouse_x;
 	ey = mouse_y;
@@ -65,6 +65,28 @@ for (var i = 0; i < instance_number(obj_enemy_move_parent); i++) {
 		else if (i < 40) with (enemy) radiusIncrease = 192;
 		else if (i < 50) with (enemy) radiusIncrease = 256;
 	}
+}
+
+if (got_heart) {
+	if (bull_hit_count < 39) bull_hit_count += 5;
+	if (bull_hit_wait > 0) bull_hit_count += 1;
+	if (sprite_index != spPlayerTank_heart) {
+		sprite_index = spPlayerTank_heart;
+		image_speed = 1;
+	}
+	global.tankpower = 10;
+	if (!cutscene && post_heart > 0) {
+		if (damage > 0) damage -= 10;
+		if (damage < 0) damage = 0;
+		post_heart--;
+	}
+}
+
+if (prev_damage != damage) {
+	if (prev_damage < damage) {
+		global.damageTaken += damage - prev_damage;
+	}
+	prev_damage = damage;
 }
 
 clicked_ui = false;

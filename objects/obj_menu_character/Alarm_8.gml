@@ -43,17 +43,19 @@ if (spin > 0) {
 			text5 = dialogues[| currentDialogue][4];
 			text = text1 + text2 + text3 + text4 + text5;
 			textHeight = string_height(text) + 2;
-			var bWidth = sprite_get_width(spBox);
+			//var bWidth = sprite_get_width(spBox);
+			draw_set_font(-1);
 												boxWidth = ceil(string_width(text1));
 			if (string_width(text2) > boxWidth) boxWidth = ceil(string_width(text2));
 			if (string_width(text3) > boxWidth) boxWidth = ceil(string_width(text3));
 			if (string_width(text4) > boxWidth) boxWidth = ceil(string_width(text4));
 			if (string_width(text5) > boxWidth) boxWidth = ceil(string_width(text5));
 			boxWidth *= 2.075;
-			if (boxWidth > bWidth) {
+			/*if (boxWidth > bWidth) {
 				boxWidth = bWidth;
 				boxWidth *= 1.025;
-			}
+			}*/
+			if (boxWidth < 400) boxWidth = 400;
 		
 			switchWait = true;
 		}

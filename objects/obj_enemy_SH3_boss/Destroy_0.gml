@@ -4,8 +4,10 @@ expl = instance_create_layer(x, y, "Enemy", obj_explosion_emitter_miniboss3);
 expl.direction = direction + 180;
 expl.splitMore = 0;
 
-if (global.level == 9) with (obj_spawner) alarm_set(6, 1);
-else {
+if (global.level == 9) {
+	with (obj_spawner) alarm_set(6, 1);
+	ds_list_add(global.minibossesBeat, 3);
+} else {
 	with (obj_spawner) {
 		timeline_index = timelineShld_wave_wait2;
 		timeline_loop = false;

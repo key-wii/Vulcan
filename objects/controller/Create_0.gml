@@ -12,11 +12,11 @@ cursorIndex = 0;
 cursorCount = 1;
 global.midbossBeaten = false;
 drawStats = true;
-time = 0;
-steps = 0;
-seconds = 0;
-minutes = 0;
 kills = 0;
+//time = global.time;
+steps = global.time;
+minutes = 0;
+seconds = 0;
 
 exitTextBox = noone;
 

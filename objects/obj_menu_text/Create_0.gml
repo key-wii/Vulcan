@@ -44,10 +44,11 @@ for (i = 0; i <= 3; i++) {
 	square.yrange2 = 3;
 }
 
-default_col = c_gray;
+default_col = c_teal;
 col = default_col;
 hover = false;
 launcher = false;
-ini_open("saveData.ini");
+flame = false;
+/*ini_open("saveData.ini");
 chargeUnlocked = ini_read_real("Bosses Beat", "boss 1 beat", false);
 ini_close();

@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_tutorial",
-  "duration": 97.6768341,
+  "duration": 97.67184,
   "parent": {
     "name": "music_old",
     "path": "folders/Sounds/music_old.yy",

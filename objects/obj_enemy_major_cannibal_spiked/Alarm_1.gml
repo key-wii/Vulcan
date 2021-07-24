@@ -2,6 +2,10 @@ if (devil_trigger < 100) {
 	alarm_set(1, 1);
 	exit;
 }
+if (damage > maxHp - 200) {
+	alarm_set(4, 1);
+	exit;
+}
 
 //flame mode
 flaming = true;

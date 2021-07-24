@@ -29,6 +29,11 @@ if (global.just_won) exit;
 if (!global.death || (instance_exists(obj_fade_screen) && obj_fade_screen.i > 0)) exit;
 if (global.level == 9) {
 	ds_list_shuffle(global.finalSpawnList);
+	if (global.checkpoint < 3 && global.halfCheckpoint == 0 &&
+		((global.wave >= 6 && global.wave < 10) || (global.wave >= 16 && global.wave < 20) ||
+		(global.wave >= 26 && global.wave < 30) || (global.wave >= 36 && global.wave < 40))) {
+			ds_list_delete(global.minibossesBeat, ds_list_size(global.minibossesBeat) - 1);
+	}
 	if (global.checkpoint < 3 &&
 		((global.wave >= 6 && global.wave <= 10) || (global.wave >= 16 && global.wave <= 20) || (global.wave >= 26 && global.wave <= 30) ||
 		((global.wave == 11 || global.wave == 21 || global.wave == 31) && global.waveCount == 0))) {
@@ -48,6 +53,7 @@ if (global.level == 9) {
 			ds_list_destroy(temp);
 	}
 }
+global.deaths++;
 room_speed = 20;
 with(controller) { alarm_set(10, 3); }
 instance_destroy();

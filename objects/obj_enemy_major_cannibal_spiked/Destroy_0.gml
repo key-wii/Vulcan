@@ -1,4 +1,43 @@
-event_inherited();
+instance_destroy(flame);
+instance_destroy(wheels);
+expl = instance_create_layer(x, y, "Enemy", obj_explosion_emitter_miniboss2);
+expl.direction = direction;
+expl.splitMore = 3;
+
+global.kills++;
+var corpse = instance_create_layer(x, y, "Floor", obj_enemy_corpse);
+corpse.sprite_index = dead_sprite;
+corpse.direction = direction;
+corpse.image_angle = corpse.direction;
+instance_destroy(blink);
+if (hitting == true) {
+	with (controller) kills++;
+	global.flameKills += 1;
+	global.flameWaveKills += 1;
+	//End current wave if combo is big enough
+	if (global.flameWaveKills == global.waveEndCombo)
+		with (obj_spawner) {
+			global.flameWaveKills = 0;
+			alarm_set(1, 1);
+			alarm_set(9, 1);
+			alarm_set(10, 100);
+		}
+}
+var player_exists = instance_exists(obj_tank_pilot);
+	if (player_exists)
+		if (obj_tank_pilot.devilSwinging) {
+			room_speed = 40;
+			with (controller) alarm_set(5, 4);
+			with (corpse)
+				alarm_set(3, 7);
+		} else if (chainKill) {
+			room_speed = 50;
+			with (controller) alarm_set(5, 4);
+			with (corpse)
+				alarm_set(3, 8);
+		}
+else obj_camera.cameraShake = screenShake;
+
 
 if (global.level == 9) {
 	with (obj_spawner) {
@@ -7,8 +46,7 @@ if (global.level == 9) {
 		alarm_set(5, 180);
 	}
 	with (obj_enemy_fly_move_parent) leave = true;
-}
-else {
+} else {
 	global.boss_just_killed = false;
 	with (obj_spawner) {
 		timeline_index = timelineSpkd_beatBoss;
@@ -17,6 +55,8 @@ else {
 		timeline_running = true;
 		alarm_set(4, 360);
 	}
+	var heart = instance_create_layer(x, y, "Enemy", obj_heart);
+	heart.upgrade = 5;
 }
 
 //Subtracted by 9 * image_xscale because of empty pixels to the left of sprite

@@ -1,3 +1,7 @@
+if (damage > maxHp - 200) {
+	alarm_set(4, 1);
+	exit;
+}
 //speed up rotation
 if (spinSpd < 0 && !swung && devil_trigger >= 100) {
 	audio_play_sound(snd_devil_swing, false, false);

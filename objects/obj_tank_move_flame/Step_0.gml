@@ -1,5 +1,6 @@
 var player_exists = instance_exists(obj_tank_pilot);
 if(!player_exists) exit;
+if ((instance_exists(obj_fade_screen) && obj_fade_screen.cutscene) || cutscene) exit;
 
 if (keyboard_check(ord("W")) && keyboard_check(ord("A")) && keyboard_check(ord("S")) ||
 	keyboard_check(ord("W")) && keyboard_check(ord("A")) && keyboard_check(ord("D")) ||

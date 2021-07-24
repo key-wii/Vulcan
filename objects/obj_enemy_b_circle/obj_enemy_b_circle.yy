@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_enemy_b_strip60",
-    "path": "sprites/spr_enemy_b_strip60/spr_enemy_b_strip60.yy",
+    "name": "spr_enemy_b",
+    "path": "sprites/spr_enemy_b/spr_enemy_b.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_enemy_s_strip60",
-    "path": "sprites/spr_enemy_s_strip60/spr_enemy_s_strip60.yy",
+    "name": "spr_enemy_s",
+    "path": "sprites/spr_enemy_s/spr_enemy_s.yy",
   },
   "persistent": false,
   "parentObjectId": {

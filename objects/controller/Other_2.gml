@@ -9,6 +9,9 @@ window_set_cursor(cr_none);
 depth = -1;
 global.max_trigger = 200;
 global.hard = false;
+ini_open("saveData.ini");
+global.everPaused = ini_read_real("Options", "ever paused", false);
+ini_close();
 
 global.moving = false; //flagged as true when moving from menu to another room
 global.flameSpeedBoost = 0; //speed boost from getting 10+ flame kills
@@ -18,9 +21,13 @@ global.level = 0;
 global.waveEndCombo = 0;
 global.flameWaveKills = 0;
 
-global.kills = 0;
-global.time = 0;
-global.damageTaken = 0;
+ini_open("saveData.ini");
+global.kills = ini_read_real("temp", "kills", 0);
+global.time = ini_read_real("temp", "time", 0);
+global.damageTaken = ini_read_real("temp", "damage", 0);
+global.deaths = ini_read_real("temp", "deaths", 0);
+ini_close();
+//time = global.time;
 
 global.finalSpawnList = ds_list_create();
 ds_list_add(global.finalSpawnList, 1, 2, 3, 4, 5, 6, 7, 8);
@@ -33,12 +40,13 @@ ds_list_shuffle(global.finalMinibossesList);
 global.finalBossesList = ds_list_create();
 ds_list_add(global.finalBossesList, 1, 2, 3, 4);
 ds_list_shuffle(global.finalBossesList);
-while (global.finalMinibossesList[| 1] == global.finalBossesList[| 1] &&
+while (global.finalMinibossesList[| 0] == global.finalBossesList[| 0] &&
+	   global.finalMinibossesList[| 1] == global.finalBossesList[| 1] &&
 	   global.finalMinibossesList[| 2] == global.finalBossesList[| 2] &&
-	   global.finalMinibossesList[| 3] == global.finalBossesList[| 3] &&
-	   global.finalMinibossesList[| 4] == global.finalBossesList[| 4]) {
+	   global.finalMinibossesList[| 3] == global.finalBossesList[| 3]) {
 			ds_list_shuffle(global.finalBossesList);
 }
+global.minibossesBeat = ds_list_create();
 
 global.death = true;
 //global.mute = false;

@@ -1,5 +1,5 @@
 if (!chargeUnlocked) exit;
-if (flaming) exit;
+if (cutscene || flaming) exit;
 if (!instance_exists(obj_tank_move_flame)) {
 	//hold shoot then let go to launch grenade
 	grenadeCharge++;

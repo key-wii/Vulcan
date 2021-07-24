@@ -1,3 +1,14 @@
+ini_open("saveData.ini");
+dizzyUnlocked = ini_read_real("Bosses Beat", "boss 3 beat", false);
+if (dizzyUnlocked) dizzyUnlocked = ini_read_real("Options", "dizzy", true);
+dragonUnlocked = ini_read_real("Bosses Beat", "boss 2 beat", false);
+if (dragonUnlocked) dragonUnlocked = ini_read_real("Options", "dragon", true);
+shieldUnlocked = ini_read_real("Bosses Beat", "boss 4 beat", false);
+if (shieldUnlocked) shieldUnlocked = ini_read_real("Options", "shield", true);
+spikesUnlocked = ini_read_real("Bosses Beat", "boss 5 beat", false);
+if (spikesUnlocked) spikesUnlocked = ini_read_real("Options", "spikes", true);
+ini_close();
+
 if (flaming_while_pausing && mouse_check_button(mb_right) == false) {
 	
 	with (obj_flame) with (particleMachine) instance_destroy();

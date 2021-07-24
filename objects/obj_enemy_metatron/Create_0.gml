@@ -48,6 +48,7 @@ if (global.checkpoint > 5) {
 	alarm_set(1, 150);
 	alarm_set(2, 40);
 }
+//damage = 9998;
 wheels.damage = damage;
 
 //keep camera on player and boss

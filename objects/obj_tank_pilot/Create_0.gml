@@ -37,3 +37,5 @@ global.flameKills = 0;
 
 alarm_set(7, 1);
 alarm_set(11, 3);
+
+prev_damage = 0;

@@ -1,3 +1,4 @@
+if (cutscene) exit;
 if (devil_trigger >= 100) {
 	shielding = false;
 	if (global.flameKills > 0)

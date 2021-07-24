@@ -31,7 +31,9 @@ if (area == 9 && (spin > 0 || size > 0)) {
 	shader_set(shd);
 	var centerW = display_get_width() / 2;
 	var centerH = display_get_height() / 2;
+	draw_set_alpha(0);
 	draw_surface_part(screen_surface, centerW, centerH, size, size, centerW + xx, centerH + yy);
+	draw_set_alpha(1);
 	shader_reset();
 	if (wait mod 3 == 2) sprite_delete(spr);
 	wait++;

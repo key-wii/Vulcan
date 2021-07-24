@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_tutorial_suspense",
-  "duration": 54.8099,
+  "duration": 54.8048973,
   "parent": {
     "name": "music_old",
     "path": "folders/Sounds/music_old.yy",

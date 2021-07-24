@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_l4",
-  "duration": 71.1103058,
+  "duration": 71.10531,
   "parent": {
     "name": "music_old",
     "path": "folders/Sounds/music_old.yy",
