@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_explosion_large",
-  "duration": 2.756565,
+  "duration": 2.751565,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

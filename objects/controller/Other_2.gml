@@ -51,6 +51,7 @@ global.minibossesBeat = ds_list_create();
 global.death = true;
 //global.mute = false;
 global.mute = true;
+global.explosionAlt = false; //used by obj_explosion_large
 
 sprite_prefetch(spr_menu_preview_f);
 sprite_prefetch(spr_menu_preview_y);

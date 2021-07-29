@@ -20,7 +20,13 @@ audio_sound_gain(snd_explosion_large, vol, 2760);*/
 if (bomber) {
 	var snd = snd_explosion_bomber;
 } else {
-	var snd = snd_explosion_large;
+	if (global.explosionAlt) {
+		var snd = snd_explosion_large_alt;
+		global.explosionAlt = false;
+	} else {
+		var snd = snd_explosion_large;
+		global.explosionAlt = true;
+	}
 	with (obj_audio_controller) {
 		ds_list_add(explosion_larges, snd);
 		var size = ds_list_size(explosion_larges);
