@@ -1,5 +1,8 @@
 event_inherited();
 
+if (y > room_height / 2) yPlus = -32;
+else yPlus = -64;
+
 col = c_maroon;
 spBox = spr_talk_text;
 var box1 = array_create(5);

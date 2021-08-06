@@ -67,6 +67,7 @@ ini_open("saveData.ini");
 lvBeat1 = ini_read_real("Levels Beat", "level 1 beat", false);
 lvBeat2 = ini_read_real("Levels Beat", "level 2 beat", false);
 lvBeat3 = ini_read_real("Levels Beat", "level 3 beat", false);
+areaBeat1 = ini_read_real("Bosses Beat", "boss 1 beat", false);
 
 areaBeat3 = ini_read_real("Bosses Beat", "boss 3 beat", false);
 areaBeat2 = ini_read_real("Bosses Beat", "boss 2 beat", false);

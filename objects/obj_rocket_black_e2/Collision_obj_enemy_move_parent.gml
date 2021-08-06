@@ -1,3 +1,7 @@
+if (!instance_exists(other.owner)) {
+	instance_destroy(other);
+	exit;
+}
 if (other.miniboss || other.object_index == obj_bomber_move || other.owner.id == owner) {
 	/*direction += rotation;
 	x += lengthdir_x(point_distance(other.x, other.y, x, y), point_direction(other.x, other.y, x, y)) / 2;

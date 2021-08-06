@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "obj_enemy_s_speed_strip60",
-    "path": "sprites/obj_enemy_s_speed_strip60/obj_enemy_s_speed_strip60.yy",
+    "name": "spr_enemy_s_armor",
+    "path": "sprites/spr_enemy_s_armor/spr_enemy_s_armor.yy",
   },
   "solid": false,
   "visible": true,

@@ -30,7 +30,7 @@ if (count > 4) count = 1;
 
 //randomly pick 4 enemies to spawn
 var seed = irandom_range(-1, 20);
-if (waveCount == 3 && (!global.midbossBeaten || !instance_exists(obj_enemy_jack_boss))) seed = -1;
+if (waveCount == 2 && (!global.midbossBeaten || !instance_exists(obj_enemy_jack_boss))) seed = -1;
 //if (start && !global.midbossBeaten && !instance_exists(obj_enemy_jack_boss)) seed = -1;
 if (seed == -1 && (global.midbossBeaten || instance_exists(obj_enemy_jack_boss))) seed = 0;
 if (seed == -1) {

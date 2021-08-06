@@ -75,10 +75,12 @@ if (debug = true) {
 }
 
 //Draw tail
-/*if ((flaming && windup_flame == 0) || shoot_rotate > 0) var ssprite = spPlayerTank_tail_spinning;
+if (bull_hit_count >= 60) var ssprite = spPlayerTank_tail_spinning_hyper;
+else if (bull_hit_count >= 45 || got_heart) var ssprite = spPlayerTank_tail_spinning_almostHyper;
+else if ((flaming && windup_flame == 0) || shoot_rotate > 0) var ssprite = spPlayerTank_tail_spinning;
 else var ssprite = spPlayerTank_tail;
-draw_sprite_ext(ssprite, tail_index, x, y, 1, clamp(flame_dir, -1, 1), direction, c_white, 1);
-tail_index += .1;*/
+draw_sprite_ext(ssprite, tail_index, x, y, image_xscale * .9, clamp(image_yscale * flame_dir, -1, 1) * .9, direction, c_white, 1);
+tail_index += .1;
 
 image_angle = direction;
 draw_self();
@@ -91,8 +93,16 @@ if (spikesUnlocked && !cutscene) {
 	var ddir, xx, yy;
 	for (i = lastSpikes * 36 - 36; i > -36; i -= 36) {
 		ddir = direction + i;
-		xx = lengthdir_x((sprite_width / 2), ddir);
-		yy = lengthdir_y((sprite_width / 2), ddir);
+		var l = 0;
+		var d = 0;
+		if  (i == 36 * 2 || i == 36 * 8) l = 10;
+		else if (i == 36 || i == 36 * 9) {
+			l = 10;
+			d = 3;
+			if (i == 36) d *= -1;
+		}
+		xx = lengthdir_x((sprite_width / 2) + l, ddir + d);
+		yy = lengthdir_y((sprite_width / 2) + l, ddir + d);
 		if (ddir != direction) draw_sprite_ext(color, 0, x + xx, y + yy, image_xscale, image_yscale, ddir + i, c_white, 1);
 		else draw_sprite_ext(color, 0, x + xx, y + yy, image_xscale, image_yscale, ddir + 180, c_white, 1);
 		//draw_sprite_ext(color, 0, x + xx, y + yy, image_xscale, image_yscale, ddir + 180, c_white, 1);

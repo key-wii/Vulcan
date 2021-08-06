@@ -12,6 +12,7 @@ if (devil_trigger < max_trigger) {
 }
 if (bull_hit_count > 0 && bull_hit_wait == 0) {
 	bull_hit_count -= 1;
+	//if (got_heart && bull_hit_count < 45) bull_hit_count = 45;
 }
 if (bull_hit_count < 0) bull_hit_count = 0;
 if (bull_hit_wait > 0) bull_hit_wait -= 2;
@@ -28,6 +29,11 @@ if (global.just_won) exit;
 //Death
 if (!global.death || (instance_exists(obj_fade_screen) && obj_fade_screen.i > 0)) exit;
 if (global.level == 9) {
+	if (damage >= 100 && damage < 109) {
+		damage = 99;
+		exit;
+	}
+	
 	ds_list_shuffle(global.finalSpawnList);
 	if (global.checkpoint < 3 && global.halfCheckpoint == 0 &&
 		((global.wave >= 6 && global.wave < 10) || (global.wave >= 16 && global.wave < 20) ||

@@ -44,7 +44,7 @@ if (chargeUnlocked) {
 		flaming && devil_trigger >= 100) {
 			devilSwingCharge++;
 			//play sound 1 frame before fully charged
-			if (devilSwingCharge >= devilSwingFullCharge - 1 && devil_trigger >= 199 &&
+			if (devilSwingCharge >= devilSwingFullCharge - 1 && devil_trigger >= 200 &&
 				chargedSound == false) {
 					audio_play_sound(snd_charge, false, false);
 					chargedSound = true;

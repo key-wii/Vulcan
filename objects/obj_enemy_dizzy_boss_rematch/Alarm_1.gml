@@ -19,4 +19,4 @@ if (burnt < 1/* && !shoot_wait*/) {
 	bull.speed = 4;
 }
 if (damage >= maxHp - 10) alarm_set(1, 30);
-else alarm_set(1, 10);
+else alarm_set(1, 14);

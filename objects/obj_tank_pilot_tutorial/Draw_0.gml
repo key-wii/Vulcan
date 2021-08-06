@@ -1,4 +1,4 @@
-if (debug = true) {
+if (debug == true) {
 	//DEBUG: Enemy (approx) approach radius
 	draw_circle(x, y, 205, true)
 	draw_circle(x, y, 255, true)
@@ -19,6 +19,15 @@ if (debug = true) {
 	draw_text(obj_tank_pilot.x + 32, obj_tank_pilot.y + 64, "health = " + string(100 - damage));
 }
 
+//Draw tail
+if (bull_hit_count >= 60) var ssprite = spPlayerTank_tail_spinning_hyper;
+else if (bull_hit_count >= 45 || got_heart) var ssprite = spPlayerTank_tail_spinning_almostHyper;
+else if ((flaming && windup_flame == 0) || shoot_rotate > 0) var ssprite = spPlayerTank_tail_spinning;
+else var ssprite = spPlayerTank_tail;
+draw_sprite_ext(ssprite, tail_index, x, y, image_xscale * .9, clamp(image_yscale * flame_dir, -1, 1) * .9, direction, c_white, 1);
+tail_index += .1;
+
+image_angle = direction;
 draw_self();
 event_inherited();
 

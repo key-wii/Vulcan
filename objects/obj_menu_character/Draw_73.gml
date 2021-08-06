@@ -4,7 +4,7 @@ ini_open("saveData.ini");
 var area_complete1 = ini_read_real("Bosses Beat", "boss 1 beat", false);
 ini_close();
 if (area_complete1) {
-	var yy = sprite_height + (sprite_get_height(spBox) / 2) + 96;
+	var yy = sprite_height + (sprite_get_height(spBox) / 2) + 96 + yPlus;
 	if (y < room_height / 2) yy /= -4;
 } else {
 	if (y < room_height / 2) var yy = sprite_height + (sprite_get_height(spBox) / 2) + 96;

@@ -12,6 +12,23 @@ if (room == room_tutorial) {
 		global.bgm = audio_play_sound(lv_02, 0, true);
 	}
 }
+else if (room == room_pause) {
+	if (audio_is_playing(msc_fool)) {
+		audio_resume_sound(global.bgm);
+		exit;
+	}
+	if (global.level == 9 && global.pauseSong != msc_pause_final) {
+		audio_stop_sound(global.pauseBgm);
+		global.pauseSong = msc_pause_final;
+		global.pauseBgm = audio_play_sound(global.pauseSong, 0, true);
+	}
+	else if (global.level != 9 && global.pauseSong != msc_pause) {
+		audio_stop_sound(global.pauseBgm);
+		global.pauseSong = msc_pause;
+		global.pauseBgm = audio_play_sound(global.pauseSong, 0, true);
+	}
+	else audio_resume_sound(global.pauseBgm);
+}
 else if (global.level == 4 && !audio_is_playing(lv_dragon)) {
 	audio_stop_sound(global.bgm);
 	global.bgm = audio_play_sound(lv_dragon, 0, true);
@@ -24,13 +41,15 @@ else if (global.level == 6 && !audio_is_playing(lv_shield)) {
 	audio_stop_sound(global.bgm);
 	global.bgm = audio_play_sound(lv_shield, 0, true);
 }
-else if (global.level == 7 && !audio_is_playing(lv_spiked)) {
-	audio_stop_sound(global.bgm);
-	global.bgm = audio_play_sound(lv_spiked, 0, true);
-}
-else if (global.level == 7 && !audio_is_playing(lv_spiked)) {
-	audio_stop_sound(global.bgm);
-	global.bgm = audio_play_sound(lv_spiked, 0, true);
+else if (global.level == 7) {
+	if ((instance_exists(obj_enemy_jack_boss) || global.checkpoint == 101) && !audio_is_playing(msc_fool)) {
+		audio_stop_sound(global.bgm);
+		global.bgm = audio_play_sound(msc_fool, 0, true);
+	}
+	else if (!audio_is_playing(lv_spiked)) {
+		audio_stop_sound(global.bgm);
+		global.bgm = audio_play_sound(lv_spiked, 0, true);
+	}
 }
 else if (global.level == 9 && !audio_is_playing(Arzni)) {
 	audio_stop_sound(global.bgm);
@@ -53,17 +72,4 @@ else if (room == room_menu) {
 	ini_close();
 	if (beatGame) global.bgm = audio_play_sound(msc_menu_beat, 0, true);
 	else global.bgm = audio_play_sound(msc_menu, 0, true);
-}
-else if (room == room_pause) {
-	if (global.level == 9 && global.pauseSong != msc_pause_final) {
-		audio_stop_sound(global.pauseBgm);
-		global.pauseSong = msc_pause_final;
-		global.pauseBgm = audio_play_sound(global.pauseSong, 0, true);
-	}
-	else if (global.level != 9 && global.pauseSong != msc_pause) {
-		audio_stop_sound(global.pauseBgm);
-		global.pauseSong = msc_pause;
-		global.pauseBgm = audio_play_sound(global.pauseSong, 0, true);
-	}
-	else audio_resume_sound(global.pauseBgm);
 }

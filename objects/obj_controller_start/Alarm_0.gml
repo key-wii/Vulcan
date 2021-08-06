@@ -12,5 +12,5 @@ exit;*/
 ini_open("saveData.ini");
 tutorial_complete = ini_read_real("Levels Beat", "tutorial beat", false);
 ini_close();
-if (tutorial_complete) room_goto(room_menu)
+if (tutorial_complete) room_goto(room_menu);
 else room_goto(room_tutorial);

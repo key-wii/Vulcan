@@ -26,9 +26,9 @@ if (debug) with (controller) {
 if (room != room_menu) {
 	var lv = global.level;
 	draw_set_font(fnt_ammunition);
-	if (lv != 9) draw_text(500 * display, 28 * display, "Checkpoint: " + string(global.checkpoint));
-	if (lv > 0 && lv <= 3) {
-		draw_text(500 * display, 10 * display, "Level: " + string(lv));
+	if (lv != 9 && lv != -1 && global.checkpoint < 100) draw_text(500 * display, 28 * display, "Checkpoint: " + string(global.checkpoint));
+	if ((lv > 0 && lv <= 3) || lv == -1) {
+		//draw_text(500 * display, 10 * display, "Level: " + string(lv));
 		var complete = false;
 		if (lv == 1) {
 			area = "Flames";
@@ -39,23 +39,50 @@ if (room != room_menu) {
 		} else if (lv == 3) { 
 			area = "Grenades";
 			if (lvBeat3) complete = true;
+		} else if (lv == -1) { 
+			area = "The Cannibal";
+			if (areaBeat1) complete = true;
+			draw_text(500 * display, 28 * display, "Checkpoint: X");
 		}
-		if (complete) draw_text((500 * display) + string_width("Level: " + string(lv)), 10 * display, " ★ Complete!");
+		draw_text(500 * display, 10 * display, "Level: " + area);
+		draw_set_color(c_yellow);
+		if (complete) draw_text((500 * display) + string_width("Level: " + area), 10 * display, " ★ Complete!");
 	} else {
 		var area = "";
+		var boss = "";
 		var complete = false;
 		if (lv == 4) {
 			area = "Dragon";
 			if (areaBeat2) complete = true;
+			switch (global.checkpoint) {
+				case 101: boss = "Hydra"; break;
+				case 102: boss = "YGB Triple Team"; break;
+				case 103: boss = "The Tiamat"; break;
+			}
 		} else if (lv == 5) { 
 			area = "Dizzy";
 			if (areaBeat3) complete = true;
+			switch (global.checkpoint) {
+				case 101: boss = "Reflector Wall"; break;
+				case 102: boss = "Red Wizard & Reflector Candle"; break;
+				case 103: boss = "The Reflector"; break;
+			}
 		} else if (lv == 6) { 
 			area = "Shield";
 			if (areaBeat4) complete = true;
+			switch (global.checkpoint) {
+				case 101: boss = "Aegis"; break;
+				case 102: boss = "Ajax"; break;
+				case 103: boss = "The Aspidochelone"; break;
+			}
 		} else if (lv == 7) { 
 			area = "Spiked";
 			if (areaBeat5) complete = true;
+			switch (global.checkpoint) {
+				case 101: boss = "The Dancer"; break;
+				case 102: boss = "Lord Slime"; break;
+				case 103: boss = "The Cannibal"; break;
+			}
 		} else if (lv == 9) {
 			area = "Final";
 			if (debug) {
@@ -74,6 +101,7 @@ if (room != room_menu) {
 			}
 			if (areaBeat9) complete = true;
 		}
+		if (global.checkpoint > 100) draw_text(500 * display, 28 * display, "Checkpoint: " + boss);
 		if (lv != 9) draw_text(500 * display, 10 * display, "Level: " + area);
 		draw_set_color(c_yellow);
 		var show = true;

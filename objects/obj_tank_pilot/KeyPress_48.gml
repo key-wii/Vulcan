@@ -1,5 +1,6 @@
 //DEBUG
-if (debug && room == room_menu) {
+if (!debug) exit;
+if (room == room_menu) {
 	part_particles_clear(global.P_System);
 	room_goto(room0);
 }

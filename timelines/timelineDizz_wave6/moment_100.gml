@@ -159,7 +159,7 @@ if (seed == 1) {
 	var enemy4 = obj_enemy_s_grenader_big;
 } else if (seed == 14) {
 	if (instance_number(obj_enemy_bbbird_s) <= 3)
-		var enemy2 = obj_enemy_bbbird_s;
+		var enemy1 = obj_enemy_bbbird_s;
 	else var enemy1 = obj_enemy_s_viper_wide;
 	var enemy2 = obj_enemy_flamer;
 	if (instance_number(obj_enemy_mage_big_circle) < 8)

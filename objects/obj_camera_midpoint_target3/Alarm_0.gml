@@ -15,7 +15,7 @@ var xx = owner.x; var yy = owner.y;
 full = point_distance(obj_tank_pilot.x, obj_tank_pilot.y, xx, yy);
 var cam = full / 2;
 
-var maxMidpoint = 700;
+var maxMidpoint = 400;
 if (cam > 335 && cam <= maxMidpoint) {
 	with (obj_camera) {
 		cameraWidth = clamp(cam * 2 * 1.5 * 1.25, 1350 * 1.25, 99999);

@@ -1,3 +1,7 @@
+if (!instance_exists(other.owner)) {
+	instance_destroy(other);
+	exit;
+}
 if (other.grenadeAlreadyHit == id) exit;
 if (instance_exists(obj_boss_parent))
 	if (obj_boss_parent.flameKills > 0)

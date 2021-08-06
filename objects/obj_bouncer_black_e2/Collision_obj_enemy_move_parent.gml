@@ -1,3 +1,7 @@
+if (!instance_exists(other.owner)) {
+	instance_destroy(other);
+	exit;
+}
 if (other.miniboss || other.owner.id == owner) {
 	/*direction += 180;
 	x += lengthdir_x(point_distance(other.x, other.y, x, y), point_direction(other.x, other.y, x, y));

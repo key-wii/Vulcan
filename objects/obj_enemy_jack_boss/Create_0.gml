@@ -22,3 +22,8 @@ last_dir = direction;
 
 //keep camera on player and boss
 obj_camera.target = instance_create_layer(x, y, "UI", obj_camera_miniboss_target);
+
+if (!audio_is_playing(msc_fool)) {
+	audio_stop_sound(global.bgm);
+	global.bgm = audio_play_sound(msc_fool, 0, true);
+}

@@ -3,6 +3,7 @@ go = true;
 hitting = false;
 hit_count = 0;
 alarm_set(8, 1);
+image_speed = 0;
 default_sprite = sprite_index;
 dead_sprite = spr_enemy_dead;
 stretch = true;
@@ -24,6 +25,8 @@ wheels = instance_create_layer(x, y, "Enemy", obj_menu_char_move);
 wheels.screenShake = screenShake;
 wheels.owner = id;
 wheels.hp = maxHp;
+wheels.sprite_index = sprite_index;
+wheels.mask_index = mask_index;
 alarm_set(0, 1);
 
 spBox = spr_talk_text;
@@ -55,6 +58,8 @@ textPart5 = "";
 
 col = c_black;
 talkWidth = 0;
+if (y > room_height / 2) yPlus = -24;
+else yPlus = -48;
 
 hovering = false;
 spin = 0;

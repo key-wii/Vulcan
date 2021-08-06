@@ -7,7 +7,7 @@ ini_close();
 event_inherited();
 
 preview = spr_portrait_char;
-text1 = "Spikey Body";
+text1 = "Spiky Body";
 text2 = "Dmg - Same as Gun";
 text3 = "Speed - Same as Gun";
 text4 = "Activates when taking damage";

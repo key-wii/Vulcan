@@ -1,6 +1,6 @@
 event_inherited();
 
-col = c_black;
+col = c_yellow;
 spBox = spr_talk_text;
 var box1 = array_create(5);
 var box2 = array_create(5);
