@@ -1,9 +1,10 @@
 var player_exists = instance_exists(obj_tank_pilot);
 if(player_exists && global.checkpoint == 0) {
 	if (xadjust != 0 || count > 0) {
+		draw_set_halign(fa_middle);
 		draw_set_colour($FFF8B2);
 		draw_set_font(fnt_kill_count_10);
-		draw_text(obj_tank_pilot.x - 150, obj_tank_pilot.y - 30, + string("YOU'RE READY"));
+		draw_text(obj_tank_pilot.x, obj_tank_pilot.y - 30, + string("YOU'RE READY"));
 		count--;
 	}
 }

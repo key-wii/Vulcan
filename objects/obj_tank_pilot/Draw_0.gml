@@ -74,18 +74,11 @@ if (debug = true) {
 	}
 }
 
-//Draw tail
-if (bull_hit_count >= 60) var ssprite = spPlayerTank_tail_spinning_hyper;
-else if (bull_hit_count >= 45 || got_heart) var ssprite = spPlayerTank_tail_spinning_almostHyper;
-else if ((flaming && windup_flame == 0) || shoot_rotate > 0) var ssprite = spPlayerTank_tail_spinning;
-else var ssprite = spPlayerTank_tail;
-draw_sprite_ext(ssprite, tail_index, x, y, image_xscale * .9, clamp(image_yscale * flame_dir, -1, 1) * .9, direction, c_white, 1);
-tail_index += .1;
-
 image_angle = direction;
 draw_self();
 event_inherited();
 
+var drawTail = true;
 if (spikesUnlocked && !cutscene) {
 			 if (weapon == 0) var color = spr_enemy_spike_y;
 		else if (weapon == 1) var color = spr_enemy_spike_g;
@@ -95,18 +88,37 @@ if (spikesUnlocked && !cutscene) {
 		ddir = direction + i;
 		var l = 0;
 		var d = 0;
-		if  (i == 36 * 2 || i == 36 * 8) l = 10;
+		var s = 0;
+		if  (i == 36 * 2 || i == 36 * 8) {
+			l = 10;
+			s = .1;
+		}
 		else if (i == 36 || i == 36 * 9) {
 			l = 10;
 			d = 3;
 			if (i == 36) d *= -1;
 		}
+		else if  (i == 36 * 5) {
+			s = 1;
+			drawTail = false;
+		}
+		else if  (i >= 36 * 3 && i <= 36 * 7) s = .4;
 		xx = lengthdir_x((sprite_width / 2) + l, ddir + d);
 		yy = lengthdir_y((sprite_width / 2) + l, ddir + d);
-		if (ddir != direction) draw_sprite_ext(color, 0, x + xx, y + yy, image_xscale, image_yscale, ddir + i, c_white, 1);
+		if (ddir != direction) draw_sprite_ext(color, 0, x + xx, y + yy, image_xscale + s, image_yscale + (s / 8), ddir + i, c_white, 1);
 		else draw_sprite_ext(color, 0, x + xx, y + yy, image_xscale, image_yscale, ddir + 180, c_white, 1);
 		//draw_sprite_ext(color, 0, x + xx, y + yy, image_xscale, image_yscale, ddir + 180, c_white, 1);
 	}
+}
+
+if (drawTail) {
+	//Draw tail
+	if (bull_hit_count >= 60) var ssprite = spPlayerTank_tail_spinning_hyper;
+	else if (bull_hit_count >= 45 || got_heart) var ssprite = spPlayerTank_tail_spinning_almostHyper;
+	else if ((flaming && windup_flame == 0) || shoot_rotate > 0) var ssprite = spPlayerTank_tail_spinning;
+	else var ssprite = spPlayerTank_tail;
+	draw_sprite_ext(ssprite, tail_index, x, y, image_xscale * .9, clamp(image_yscale * flame_dir, -1, 1) * .9, direction, c_white, 1);
+	tail_index += .05;
 }
 
 //Draw shield

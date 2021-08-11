@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_enemy_c","path":"sprites/spr_enemy_c/spr_enemy_c.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_enemy_c",
     "tags": [],
     "resourceType": "GMSequence",
   },

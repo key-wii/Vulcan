@@ -114,7 +114,7 @@ else if (phase == 8) {
 		else if (timeline_position mod 10 == 0 && timeline_position mod 100 != 0) timeline_position += 9;
 	}
 	if (damage > 8000 && timeline_position < 8499) timeline_position = 8499;
-	else if (damage >= 9000) phase = 9;
+	else if (damage >= 9200) phase = 9;
 }
 else if (phase == 9) {
 	if (timeline_index != timeline_finalBoss_Fodder || timeline_position < 8501) {

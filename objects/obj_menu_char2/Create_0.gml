@@ -1,5 +1,7 @@
 event_inherited();
 
+dead_sprite = spr_enemy_big_dead;
+
 col = c_yellow;
 spBox = spr_talk_text;
 var box1 = array_create(5);
@@ -39,12 +41,12 @@ if (ini_read_real("Bosses Beat", "boss 1 beat", false)) {
 	box1[1] = "scoff at. While spinning pressing left";
 	box1[2] = "click will quickly change the flame's";
 	box1[3] = "direction which allows for full control";
-	box1[4] = "over its rotation.";
-	box2[0] = "Flamethrowers may be the deadliest";
-	box2[1] = "weapon and it already acquired guns";
-	box2[2] = "from killing 3 mutants. The Rat may";
-	box2[3] = "have even more mutations to watch";
-	box2[4] = "out for. Keep a close eye on 'em.";
+	box1[4] = "over the flamethrower's rotation.";
+	box2[0] = "Flamethrowers are be the most lethal";
+	box2[1] = "damage and she already acquired guns";
+	box2[2] = "from killing 3 of our mutants. The Rat";
+	box2[3] = "may steal even more mutations. We'll";
+	box2[4] = "keep a close eye on 'er, boss.";
 }
 ini_close();
 dialogues[| 0] = box1;

@@ -2,6 +2,8 @@ draw_set_alpha(1);
 draw_set_color(c_white);
 var display = obj_camera.displayScale;
 
+draw_set_halign(fa_left);
+
 //list of enemies
 /*draw_set_font(fnt_ammunition);
 for (var i = 0; i < instance_number(obj_enemy_move_parent); i++) {
@@ -51,6 +53,7 @@ if (room != room_menu) {
 		var area = "";
 		var boss = "";
 		var complete = false;
+		if (room == room_tutorial) area = "Zero";
 		if (lv == 4) {
 			area = "Dragon";
 			if (areaBeat2) complete = true;

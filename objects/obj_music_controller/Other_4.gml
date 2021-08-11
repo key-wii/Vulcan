@@ -3,16 +3,7 @@ if (global.unpausing) {
 	exit;
 }
 
-if (room == room_tutorial) {
-	if (global.checkpoint < 5 && !audio_is_playing(lv_0)) {
-		audio_stop_sound(global.bgm);
-		global.bgm = audio_play_sound(lv_0, 0, true);
-	} else if (global.checkpoint >= 5 && !audio_is_playing(lv_02)) {
-		audio_stop_sound(global.bgm);
-		global.bgm = audio_play_sound(lv_02, 0, true);
-	}
-}
-else if (room == room_pause) {
+if (room == room_pause) {
 	if (audio_is_playing(msc_fool)) {
 		audio_resume_sound(global.bgm);
 		exit;
@@ -29,6 +20,19 @@ else if (room == room_pause) {
 	}
 	else audio_resume_sound(global.pauseBgm);
 }
+else if (room == room_tutorial) {
+	if (global.checkpoint < 5 && !audio_is_playing(lv_0)) {
+		audio_stop_sound(global.bgm);
+		global.bgm = audio_play_sound(lv_0, 0, true);
+	} else if (global.checkpoint >= 5 && !audio_is_playing(lv_02)) {
+		audio_stop_sound(global.bgm);
+		global.bgm = audio_play_sound(lv_02, 0, true);
+	}
+}
+/*else if (global.level >= 1 && global.level <= 3 && !audio_is_playing(lv_)) {
+	audio_stop_sound(global.bgm);
+	global.bgm = audio_play_sound(lv_, 0, true);
+}*/
 else if (global.level == 4 && !audio_is_playing(lv_dragon)) {
 	audio_stop_sound(global.bgm);
 	global.bgm = audio_play_sound(lv_dragon, 0, true);

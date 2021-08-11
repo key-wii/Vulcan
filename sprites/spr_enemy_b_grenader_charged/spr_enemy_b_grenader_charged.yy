@@ -8,9 +8,9 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 6,
-  "bbox_right": 73,
-  "bbox_top": 12,
-  "bbox_bottom": 66,
+  "bbox_right": 75,
+  "bbox_top": 11,
+  "bbox_bottom": 68,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -30,9 +30,9 @@
     {"compositeImage":{"FrameId":{"name":"9c0d8d20-b971-4d80-bd08-993d9bb80ac5","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"9c0d8d20-b971-4d80-bd08-993d9bb80ac5","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"LayerId":{"name":"5c910a27-9b00-4e75-a14a-5c8b14b7e86d","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_enemy_b_grenader_charged","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","name":"9c0d8d20-b971-4d80-bd08-993d9bb80ac5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e144a9ad-1690-4796-b1d5-9b496704ea60","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e144a9ad-1690-4796-b1d5-9b496704ea60","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"LayerId":{"name":"5c910a27-9b00-4e75-a14a-5c8b14b7e86d","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_enemy_b_grenader_charged","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","name":"e144a9ad-1690-4796-b1d5-9b496704ea60","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4fe664aa-db9a-49fe-be4b-ab194448fb66","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4fe664aa-db9a-49fe-be4b-ab194448fb66","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"LayerId":{"name":"5c910a27-9b00-4e75-a14a-5c8b14b7e86d","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemy_b_grenader_charged","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","name":"4fe664aa-db9a-49fe-be4b-ab194448fb66","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_enemy_b_grenader_charged","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},
@@ -49,7 +49,7 @@
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a3d1357a-696e-4866-964c-9a947368b677","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e676bc16-20e0-4725-a819-c91d5b52a84e","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b34cca1f-cf5d-4281-9332-83e6ece71e4f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9c0d8d20-b971-4d80-bd08-993d9bb80ac5","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"ba22c6b5-783b-4173-87db-f805d1616dab","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e144a9ad-1690-4796-b1d5-9b496704ea60","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e636c800-7212-4c3c-a7d1-26dc2492eaa0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4fe664aa-db9a-49fe-be4b-ab194448fb66","path":"sprites/spr_enemy_b_grenader_charged/spr_enemy_b_grenader_charged.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,

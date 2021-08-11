@@ -11,6 +11,7 @@ wheels.owner = id;
 wheels.hp = maxHp;
 alarm_set(0, 1);
 bull_color = $FFFF47;
+dead_sprite = spr_enemy_c_dead;
 
 var rand = random_range(0, 3);
 wheels.spd = 6 + rand;

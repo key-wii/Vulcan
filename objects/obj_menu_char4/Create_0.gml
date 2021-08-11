@@ -1,5 +1,6 @@
 event_inherited();
 
+dead_sprite = spr_enemy_slime_dead;
 if (y > room_height / 2) yPlus = -32;
 else yPlus = -64;
 
@@ -31,9 +32,9 @@ box2[4] = "approximately ~ 4.54%";
 var box3 = array_create(5);
 box3[0] = "Us slimes can take advantage";
 box3[1] = "of this weakness to sneak up";
-box3[2] = "and kamikaze when The Rat";
-box3[3] = "least expects it! The plan";
-box3[4] = "is full proof >:)";
+box3[2] = "and go kamikaze when The Rat";
+box3[3] = "least expects it!";
+box3[4] = "";
 dialogues[| 0] = box1;
 dialogues[| 1] = box2;
 dialogues[| 2] = box3;

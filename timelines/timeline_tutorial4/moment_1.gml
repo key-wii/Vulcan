@@ -6,4 +6,4 @@ if (global.checkpoint == 7) {
 	timeline_position = 3700;
 	exit;
 }
-global.checkpoint = 5;
+//global.checkpoint = 5;

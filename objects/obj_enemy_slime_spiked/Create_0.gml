@@ -9,7 +9,7 @@ wheels.hp = maxHp;
 wheels.ddir = direction;
 alarm_set(0, 1);
 bull_color = $FFFF47;
-dead_sprite = spr_enemy_big_dead;
+dead_sprite = spr_enemy_slime_dead;
 
 slime = true;
 childrenLeft = 2;

@@ -28,4 +28,4 @@ if (count > 100) {
 	if (phase == 2 && yy2 >= (room_height / 2) - 870) { 
 		yy2 -= 128;
 	} else if (phase == 2) phase = 1;
-}
+}//sound_machine(snd_shoot_e, x, y);

@@ -20,7 +20,7 @@ if (ini_read_real("Bosses Beat", "boss 2 beat", false) && ini_read_real("Bosses 
 	box1[4] = "may need to bring out the big guns now.";
 	box2[0] = "The Rat has grown much too powerful";
 	box2[1] = "so a portal has been prepared for";
-	box2[2] = "you to join us, milord. If it comes";
+	box2[2] = "you to join us, Boss. If it comes";
 	box2[3] = "to that point, you'll spawn to face";
 	box2[4] = "off against her as our last resort.";
 	box3[0] = "                ";

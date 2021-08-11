@@ -1,7 +1,7 @@
 event_inherited();
 
 image_speed = 1;
-image_index = 2;
+image_index = 4;
 dead_sprite = spr_enemy_miniboss_dead;
 if (y > room_height / 2) yPlus = -48;
 else yPlus = -96;
@@ -12,11 +12,11 @@ var box1 = array_create(5);
 //var box2 = array_create(5);
 ini_open("saveData.ini");
 if (ini_read_real("Bosses Beat", "boss 5 beat", false)) {
-	box1[0] = "";
-	box1[1] = "";
-	box1[2] = "placeholder dialogue";
-	box1[3] = "";
-	box1[4] = "";
+	box1[0] = "If you supplied me with dark ammo";
+	box1[1] = "like The other Four, The Rat would";
+	box1[2] = "would be no more! I'm stronger than";
+	box1[3] = "them, but you let your favoritism";
+	box1[4] = "lead us astray, don't you Boss?";
 	/*box2[0] = "";
 	box2[1] = "";
 	box2[2] = "";

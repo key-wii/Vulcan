@@ -7,7 +7,7 @@ if (do_once == true) {
 	else if (global.checkpoint == 4) timeline_index = timeline_tutorial3;
 	else if (global.checkpoint >= 5) {
 		timeline_index = timeline_tutorial4;
-		with (obj_music_controller_tutorial) {
+		/*with (obj_music_controller_tutorial) {
 			if (currentSong != msc_tutorial_suspense) {
 				audio_stop_sound(bgm);
 				currentSong = msc_tutorial_suspense;
@@ -16,11 +16,11 @@ if (do_once == true) {
 				loop_length = 45.26;
 				full_length = intro_length + loop_length;
 			}
-		}
+		}*/
 	}
 	if (global.checkpoint > 0) {
-			timeline_position = 0;
-			timeline_running = true;
+		timeline_position = 0;
+		timeline_running = true;
 	}
 	do_once = false;
 }

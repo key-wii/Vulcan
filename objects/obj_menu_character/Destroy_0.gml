@@ -1,8 +1,10 @@
-var corpse = instance_create_layer(x, y, "Floor", obj_enemy_corpse);
+instance_destroy(wheels);
+ds_list_destroy(dialogues);
+
+/*var corpse = instance_create_layer(x, y, "Floor", obj_enemy_corpse);
 corpse.sprite_index = dead_sprite;
 corpse.direction = direction;
 corpse.image_angle = corpse.direction;
-instance_destroy(blink);
 if (hitting == true) {
 	with (controller) kills++;
 	global.flameKills += 1;
@@ -29,7 +31,4 @@ var player_exists = instance_exists(obj_tank_pilot);
 			with (corpse)
 				alarm_set(3, 8);
 		}
-else obj_camera.cameraShake = screenShake;
-
-
-ds_list_destroy(dialogues);
+else obj_camera.cameraShake = screenShake;*/

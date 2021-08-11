@@ -1,4 +1,4 @@
-/*var controller_exists = instance_exists(controller);
+var controller_exists = instance_exists(controller);
 if (controller_exists && !controller.visible) exit;
 var thickness = 4;
 for (i = 0; i <= cameraHeight; i += thickness * displayScale)

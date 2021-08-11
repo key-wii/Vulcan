@@ -17,13 +17,13 @@ else {
 	xadjust = 0; yadjust = 0;
 	count = 100;
 	//play the full song
-	with (obj_music_controller_tutorial) {
+	/*with (obj_music_controller_tutorial) {
 		if (currentSong == msc_tutorial) {
 			intro_length = 15.03;
 			loop_length = 82.5;
 			full_length = intro_length + loop_length;
 		}
-	}
+	}*/
 	instance_destroy(obj_how_to_flame);
 }
 if (moved == 288) {

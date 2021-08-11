@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"spPlayerTankMenu","path":"sprites/spPlayerTankMenu/spPlayerTankMenu.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spPlayerTankMenu",
     "tags": [],
     "resourceType": "GMSequence",
   },
