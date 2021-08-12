@@ -1,6 +1,6 @@
 event_inherited();
 
-col = c_navy;
+col = c_blue;
 spBox = spr_talk_text;
 var box1 = array_create(5);
 ini_open("saveData.ini");

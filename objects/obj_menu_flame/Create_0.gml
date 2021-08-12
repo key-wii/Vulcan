@@ -19,5 +19,5 @@ if (chargeUnlocked) {
 }
 text = text1 + text2 + text3 + text4 + text5;
 
-col = c_orange;
+col = make_color_rgb(248, 148, 29);
 flame = true;
