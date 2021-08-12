@@ -14,7 +14,7 @@ if (ini_read_real("Bosses Beat", "boss 1 beat", false)) {
 	else if (ini_read_real("Bosses Beat", "boss 4 beat", false)) justBeat1 = false;
 	else if (ini_read_real("Bosses Beat", "boss 5 beat", false)) justBeat1 = false;
 	if (justBeat1) {
-		box1[0] = "The Rat just got a mutation—";
+		box1[0] = "The Rat just got a mutation-";
 		box1[1] = "charge attacks. That's not";
 		box1[2] = "good, boss! By holding left";
 		box1[3] = "click while spinning they";

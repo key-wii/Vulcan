@@ -118,7 +118,7 @@ if (drawTail) {
 	else if ((flaming && windup_flame == 0) || shoot_rotate > 0) var ssprite = spPlayerTank_tail_spinning;
 	else var ssprite = spPlayerTank_tail;
 	draw_sprite_ext(ssprite, tail_index, x, y, image_xscale * .9, clamp(image_yscale * flame_dir, -1, 1) * .9, direction, c_white, 1);
-	tail_index += .05;
+	tail_index += .1;
 }
 
 //Draw shield

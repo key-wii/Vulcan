@@ -27,7 +27,7 @@ if (ini_read_real("Bosses Beat", "boss final beat", false)) {
 	box2[3] = "maintained by destroying";
 	box2[4] = "bullets in succession.";
 	dialogues[| 1] = box2;
-} else if (ini_read_real("Bosses Beat", "boss 1 beat", false)) {
+} else if (!ini_read_real("Bosses Beat", "boss 1 beat", false)) {
 	instance_destroy();
 	ini_close();
 	exit;
