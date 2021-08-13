@@ -93,19 +93,19 @@ else if (!flaming && burnt > 70 && alarm_get(2) <= 0) {
 else if ((phase == 4) && !flaming) {
 	if (burnt <= 0 && player_exists && alarm_get(5) <= 0) {
 		var ddis = point_distance(x, y, obj_tank_pilot.x, obj_tank_pilot.y);
-			if (ddis >= sprite_width / 2 + 550) alarm_set(5, 70);
-		else if (ddis < sprite_width / 2 + 550) alarm_set(5, 60);
-		else if (ddis < sprite_width / 2 + 500) alarm_set(5, 50);
-		else if (ddis < sprite_width / 2 + 475) alarm_set(5, 45);
-		else if (ddis < sprite_width / 2 + 450) alarm_set(5, 40);
-		else if (ddis < sprite_width / 2 + 425) alarm_set(5, 35);
-		else if (ddis < sprite_width / 2 + 400) alarm_set(5, 30);
-		else if (ddis < sprite_width / 2 + 375) alarm_set(5, 25);
-		else if (ddis < sprite_width / 2 + 350) alarm_set(5, 20);
-		else if (ddis < sprite_width / 2 + 325) alarm_set(5, 15);
-		else if (ddis < sprite_width / 2 + 300) alarm_set(5, 10);
-		else if (ddis < sprite_width / 2 + 275) alarm_set(5, 5);
-		else if (ddis < sprite_width / 2 + 250) alarm_set(5, 2);
+			if (ddis >= sprite_width / 4 + 550) alarm_set(5, 70);
+		else if (ddis < sprite_width / 4 + 550) alarm_set(5, 60);
+		else if (ddis < sprite_width / 4 + 500) alarm_set(5, 50);
+		else if (ddis < sprite_width / 4 + 475) alarm_set(5, 45);
+		else if (ddis < sprite_width / 4 + 450) alarm_set(5, 40);
+		else if (ddis < sprite_width / 4 + 425) alarm_set(5, 35);
+		else if (ddis < sprite_width / 4 + 400) alarm_set(5, 30);
+		else if (ddis < sprite_width / 4 + 375) alarm_set(5, 25);
+		else if (ddis < sprite_width / 4 + 350) alarm_set(5, 20);
+		else if (ddis < sprite_width / 4 + 325) alarm_set(5, 15);
+		else if (ddis < sprite_width / 4 + 300) alarm_set(5, 10);
+		else if (ddis < sprite_width / 4 + 275) alarm_set(5, 5);
+		else if (ddis < sprite_width / 4 + 250) alarm_set(5, 2);
 	}
 }
 else if (phase == 8) {

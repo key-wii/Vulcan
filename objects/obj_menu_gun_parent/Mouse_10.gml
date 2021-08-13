@@ -9,7 +9,7 @@ var ttext4 = text4;
 var ttext5 = text5;
 var ttext = text;
 
-with (obj_menu_portrait) {
+if (room != room_credits) with (obj_menu_portrait) {
 	sprite_index = ppreview;
 	image_speed = 1;
 	col = ccol;

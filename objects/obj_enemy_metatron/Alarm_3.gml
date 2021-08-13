@@ -34,8 +34,8 @@ if (DR && flameBullDR) { alarm_set(3, 7); exit; }
 if (burnt < 1) {
 	if (UR || UL || DL || DR) {
 		var ddir = direction;
-		var xx = lengthdir_x(sprite_width / 2, ddir);
-		var yy = lengthdir_y(sprite_width / 2, ddir);
+		var xx = lengthdir_x(sprite_width / 4, ddir);
+		var yy = lengthdir_y(sprite_width / 4, ddir);
 		var bull = instance_create_layer(x + xx, y + yy, "Enemy_Bullets", obj_shell_black_flamer_e);
 		bull.direction = ddir;
 		bull.image_angle = bull.direction;

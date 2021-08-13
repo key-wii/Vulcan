@@ -1,3 +1,11 @@
+if (global.level == 9 && global.checkpoint >= 5) {
+	if (!audio_is_playing(msc_final_boss)) {
+		audio_stop_sound(global.bgm);
+		global.bgm = audio_play_sound(msc_final_boss, 0, true);
+	}
+	exit;
+}
+
 if (global.unpausing) {
 	audio_resume_sound(global.bgm);
 	exit;
@@ -89,7 +97,3 @@ else if (global.level == 7) {
 		global.bgm = audio_play_sound(lv_spiked, 0, true);
 	}
 }
-/*else if (global.level == 9 && global.checkpoint >= 5 && !audio_is_playing(msc_final_boss)) {
-	audio_stop_sound(global.bgm);
-	global.bgm = audio_play_sound(msc_final_boss, 0, true);
-}*/

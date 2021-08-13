@@ -1,4 +1,4 @@
-finalBoss = instance_create_layer(xx, yy, "Enemy", obj_enemy_metatron);
+finalBoss = instance_create_layer(xx, yy, "Enemy_Above", obj_enemy_metatron);
 
 if (instance_exists(obj_tank_move)) var pMove = obj_tank_move;
 else if (instance_exists(obj_tank_move_flame))  var pMove = obj_tank_move_flame;

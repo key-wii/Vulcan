@@ -9,8 +9,8 @@ if (flame != id) {
 var bull;
 if (burnt < 1) {
 	var ddir = direction;
-	var xx = lengthdir_x(sprite_width / 2, ddir);
-	var yy = lengthdir_y(sprite_width / 2, ddir);
+	var xx = lengthdir_x(sprite_width / 4, ddir);
+	var yy = lengthdir_y(sprite_width / 4, ddir);
 	bull = instance_create_layer(x + xx, y + yy, "Enemy_Bullets", obj_shell_black_flamer_e);
 	bull.direction = ddir;
 	bull.image_angle = bull.direction;

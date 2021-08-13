@@ -1,1 +1,0 @@
-global.checkpoint = 8;

@@ -1,1 +1,0 @@
-if (instance_number(obj_enemy_parent) > 0 || instance_exists(obj_heart)) timeline_position -= 100;

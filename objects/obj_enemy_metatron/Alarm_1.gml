@@ -5,8 +5,8 @@ if (flaming) var fl = true;
 else var fl = false;
 if (burnt < 1) {
 	var ddir = direction;
-	var xx = lengthdir_x(sprite_width / 2, ddir);
-	var yy = lengthdir_y(sprite_width / 2, ddir);
+	var xx = lengthdir_x(sprite_width / 4, ddir);
+	var yy = lengthdir_y(sprite_width / 4, ddir);
 	var bull = instance_create_layer(x + xx, y + yy, "Enemy_Bullets", obj_heal_e);
 	bull.direction = ddir;
 	bull.image_angle = bull.direction;
@@ -23,6 +23,7 @@ if (burnt < 1) {
 }
 if (!fl) alarm_set(1, 36);
 else {
+	if (burnt >= 1) exit;
 	shootCount++;
 	if (shootCount > 260) shootCount = 1;
 	if (shootCount < 60) {
@@ -46,7 +47,6 @@ else {
 	}
 }
 
-if (burnt >= 1) exit;
 x_adjust = lengthdir_x(8, direction);
 y_adjust = lengthdir_y(8, direction);
 alarm_set(9, 7);

@@ -1,8 +1,8 @@
 if (phase == 9) exit;
 if (laserCount < 360 || windup > 0 || laserWait > 0) {
 	if (laserCount mod 2 == 0) {
-		xxLaser = lengthdir_x(sprite_width / 2, direction);
-		yyLaser = lengthdir_y(sprite_width / 2, direction);
+		xxLaser = lengthdir_x(sprite_width / 4, direction);
+		yyLaser = lengthdir_y(sprite_width / 4, direction);
 		particleMachine = instance_create_layer(x + xxLaser, y + yyLaser, "Enemy_UI", obj_particles_laser_final_e);
 		particleMachine.owner = id;
 		particleMachine.direction = direction;
@@ -14,8 +14,8 @@ if (laserCount < 360 || windup > 0 || laserWait > 0) {
 	if (laserWait > 0) laserWait--;
 } else {
 	if (laserCount mod 2 == 0 && flameCount == 0) {
-		xxLaser = lengthdir_x(sprite_width / 2, direction);
-		yyLaser = lengthdir_y(sprite_width / 2, direction);
+		xxLaser = lengthdir_x(sprite_width / 4, direction);
+		yyLaser = lengthdir_y(sprite_width / 4, direction);
 		particleMachine = instance_create_layer(x + xxLaser, y + yyLaser, "Enemy_UI", obj_particles_laser_final_e);
 		particleMachine.owner = id;
 		particleMachine.direction = direction;

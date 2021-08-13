@@ -21,8 +21,8 @@ if (windup == 0) {
 	} else {
 		if (burnt < 1) {
 			var ddir = direction;
-			var xx = lengthdir_x(sprite_width / 2 + shield.sprite_width / 2, ddir);
-			var yy = lengthdir_y(sprite_width / 2 + shield.sprite_width / 2, ddir);
+			var xx = lengthdir_x(sprite_width / 4 + shield.sprite_width / 2, ddir);
+			var yy = lengthdir_y(sprite_width / 4 + shield.sprite_width / 2, ddir);
 			bull = instance_create_layer(x + xx, y + yy, "Enemy_Bullets", obj_shell_e);
 			bull.direction = ddir;
 			bull.image_angle = bull.direction;

@@ -1,5 +1,5 @@
 if (instance_exists(obj_exit_text)) exit;
-with (obj_menu_portrait) {
+if (room != room_credits) with (obj_menu_portrait) {
 	sprite_index = default_sprite;
 	image_speed = 0;
 	col = c_teal;

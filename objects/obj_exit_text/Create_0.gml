@@ -1,3 +1,8 @@
+if (room == room_credits) {
+	instance_change(obj_exit_text_final, true);
+	exit;
+}
+
 image_speed = 0;
 menu = false;
 tutorial = false;

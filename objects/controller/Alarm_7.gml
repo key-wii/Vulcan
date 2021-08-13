@@ -20,6 +20,8 @@ ini_write_real("Options", "ever paused", true);
 ini_close();
 global.everPaused = true;
 
-audio_pause_sound(global.bgm);
+var pauseSnd = true;
+if (global.level == 9 && global.checkpoint >= 5) pauseSnd = false;
+if (pauseSnd) audio_pause_sound(global.bgm);
 
 room_goto(room_pause);

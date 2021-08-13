@@ -29,3 +29,7 @@ maxEnemies = 10;
 	layer_background_change(layer_background_get_id("Background"), background_white);
 	layer_background_blend(layer_background_get_id("Background"), color_get_hue($99CDFF));
 }
+
+timeline_index = timeline_lastSurprise;
+	timeline_position = 1010;
+	timeline_running = true;

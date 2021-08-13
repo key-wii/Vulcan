@@ -6,7 +6,8 @@ exit;*/
 global.checkpoint = 0;
 room_goto(room0);
 exit;*/
-
+room_goto(room_credits);
+exit;
 
 
 ini_open("saveData.ini");
