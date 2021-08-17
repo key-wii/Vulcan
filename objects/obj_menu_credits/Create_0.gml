@@ -6,7 +6,7 @@ default_text1 = "The Mutant Rat";
 default_text2 = "LIFE - 100";
 default_text3 = "Charges - " + string(global.max_trigger / 100);
 default_text4 = "Takes up the mantle as Last Boss";
-default_text5 = "Raising a new generation";
+default_text5 = "Fostering a new generation";
 /*default_text4 = "Smirks during combos";
 default_text5 = "Cheats death while smirking";*/
 

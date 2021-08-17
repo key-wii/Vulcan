@@ -14,4 +14,5 @@ if (set_hp > 0) {
 	spawn.maxHp = set_hp;
 	with (spawn) wheels.hp = maxHp;
 }
+audio_stop_sound(snd_final_spawn);
 instance_destroy();

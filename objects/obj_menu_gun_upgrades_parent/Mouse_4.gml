@@ -1,4 +1,5 @@
 event_inherited();
+if (room == room_credits) exit;
 
 ini_open("saveData.ini");
 if (on) {

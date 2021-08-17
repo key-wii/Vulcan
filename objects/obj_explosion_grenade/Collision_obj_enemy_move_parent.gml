@@ -62,6 +62,7 @@ with(other) {
 		if (owner.max_trigger > 0) {
 			owner.devil_trigger = 0;
 			owner.devil_trigger -= power(owner.max_trigger / 100, 3);
+			owner.red_skull = 20;
 		}
 		//alarm for allowing enemy to get hit by grenades while trying to prevent taking more damage
 		//from multiple explosions (and the same explosion)

@@ -38,6 +38,15 @@ if(flameKills > 0) {
 	//Draw smirk
 	draw_sprite(spr_smirksmall_strip14, 0, 0, 0);
 }
+
+if (red_skull > 0) {
+	red_skull--;
+	var xs = 0;
+	var ys = 1;
+	if (red_skull < 5) xs += .2 * red_skull;
+	else xs = 1;
+	draw_sprite_ext(spr_skull, 0, x, y, xs, ys, 0, c_white, 1);
+}
 /*
 //Lines of sight for shooting enemies
 var x1 = lengthdir_x(80, direction);

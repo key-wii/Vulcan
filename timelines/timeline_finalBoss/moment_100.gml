@@ -7,5 +7,7 @@ with (spawn) {
 	rotation = 3;
 	alarm_set(0, 1980);
 	//alarm_set(0, 1);
-	sound_machine(snd_final_spawn, x, y);
+	var xxx = room_width / 2 - 42;
+	var yyy = room_height / 2 - 44;
+	sound_machine(snd_final_spawn, xxx, yyy);
 }

@@ -62,6 +62,8 @@ clicked_ui = false;
 cutscene = false;
 got_heart = false;
 post_heart = 0;
+red_skull = 0;
+finale = false;
 
 ini_open("saveData.ini");
 lvBeat1 = ini_read_real("Levels Beat", "level 1 beat", false);

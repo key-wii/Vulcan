@@ -82,6 +82,8 @@ if (got_heart) {
 	}
 }
 
+if (finale) sprite_index = spPlayerTankFl_finale;
+
 if (prev_damage != damage) {
 	if (prev_damage < damage) {
 		global.damageTaken += damage - prev_damage;

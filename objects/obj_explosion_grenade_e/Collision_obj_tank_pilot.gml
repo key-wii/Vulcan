@@ -14,6 +14,7 @@ with(other) {
 		if (broken_shield) damage += other.pow;
 		devil_trigger = 0;
 		devil_trigger -= power(max_trigger / 100, 3);
+		red_skull = 50;
 		negaDmg = damage - 100 - flameHeals;
 		if (spikesUnlocked) alarm_set(8, 1);
 		

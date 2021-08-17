@@ -80,7 +80,8 @@ event_inherited();
 
 var drawTail = true;
 if (spikesUnlocked && !cutscene) {
-			 if (weapon == 0) var color = spr_enemy_spike_y;
+			 if (got_heart || finale) var color = spr_spike_finale;
+		else if (weapon == 0) var color = spr_enemy_spike_y;
 		else if (weapon == 1) var color = spr_enemy_spike_g;
 		else if (weapon == 2) var color = spr_enemy_spike_b;
 	var ddir, xx, yy;
@@ -139,6 +140,15 @@ if(shield > 0) {
 		}
 	}
 }*/
+
+if (red_skull > 0) {
+	red_skull--;
+	var xs = 0;
+	var ys = 1;
+	if (red_skull < 5) xs += .24 * red_skull;
+	else xs = 1;
+	draw_sprite_ext(spr_skull, 0, x, y, xs, ys, 0, c_white, 1);
+}
 
 //Draw flame kill count
 if(global.flameKills > 0) {

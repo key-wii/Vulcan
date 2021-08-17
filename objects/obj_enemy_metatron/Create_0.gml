@@ -50,10 +50,6 @@ if (global.checkpoint > 5) {
 }
 //damage = 9998;
 wheels.damage = damage;
-if (!audio_is_playing(msc_final_boss)) {
-	audio_stop_sound(global.bgm);
-	global.bgm = audio_play_sound(msc_final_boss, 0, true);
-}
 
 //keep camera on player and boss
 obj_camera.target = instance_create_layer(x, y, "UI", obj_camera_midpoint_target3);

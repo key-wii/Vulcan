@@ -1,8 +1,7 @@
-if (global.level == 9 && global.checkpoint >= 5) {
-	if (!audio_is_playing(msc_final_boss)) {
-		audio_stop_sound(global.bgm);
-		global.bgm = audio_play_sound(msc_final_boss, 0, true);
-	}
+if (global.level == 9 && global.checkpoint >= 5 && audio_is_playing(msc_final_boss)) exit;
+if (global.level == 9 && global.checkpoint >= 5 && !audio_is_playing(msc_final_boss)) {
+	audio_stop_sound(global.bgm);
+	global.bgm = audio_play_sound(msc_final_boss, 0, true);
 	exit;
 }
 

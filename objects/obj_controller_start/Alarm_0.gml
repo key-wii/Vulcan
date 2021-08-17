@@ -1,3 +1,5 @@
+global.title = "Vulcan";
+global.author = "Hoopy Frood";
 /*global.level = 9;
 global.checkpoint = 7;
 room_goto(room0);
@@ -6,8 +8,9 @@ exit;*/
 global.checkpoint = 0;
 room_goto(room0);
 exit;*/
-room_goto(room_credits);
-exit;
+/*room_goto(room_credits);
+exit;*/
+
 
 
 ini_open("saveData.ini");

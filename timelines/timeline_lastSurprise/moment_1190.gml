@@ -1,3 +1,5 @@
+if (instance_exists(obj_tank_pilot)) with (obj_tank_pilot) finale = true;
+
 var player_exists = instance_exists(obj_tank_pilot)
 if (!player_exists) exit;
 

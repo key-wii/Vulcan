@@ -36,6 +36,7 @@ if (!global.unpausing) {
 }
 else audio_pause_sound(global.pauseBgm);
 
+audio_stop_sound(snd_final_spawn);
 alarm_set(8, 1);
 //global.PauseScreenShot = sprite_create_from_surface(application_surface, 0, 0, 0, 0, false, false, 0, 0);
 room_persistent = false;

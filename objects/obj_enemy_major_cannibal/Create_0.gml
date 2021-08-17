@@ -45,6 +45,7 @@ flameHeals = 0;
 healAmount = 0;
 healed = 0;
 healing = false;
+red_skull = 0;
 
 /*damage = 640;
 wheels.damage = damage;*/

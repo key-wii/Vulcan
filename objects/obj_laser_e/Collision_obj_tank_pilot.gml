@@ -12,6 +12,7 @@ with(other) {
 		if (broken_shield) damage += other.pow;
 		devil_trigger -= devil_refill * 2;
 		if (devil_trigger < -max_trigger) devil_trigger = -max_trigger;
+		red_skull = 25;
 		//if (negaDmg < 100) damage += other.pow;
 		negaDmg = damage - 100 - flameHeals;
 		//if (negaDmg > 100.01) damage -= negaDmg - 100;
