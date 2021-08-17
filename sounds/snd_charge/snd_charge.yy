@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.04,
+  "volume": 0.065,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_charge",
-  "duration": 1.068764,
+  "soundFile": "snd_charge.wav",
+  "duration": 1.07381,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

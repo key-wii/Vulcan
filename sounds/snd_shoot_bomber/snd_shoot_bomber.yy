@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_shoot_bomber.mp3",
-  "duration": 2.501,
+  "duration": 2.496,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

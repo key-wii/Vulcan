@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_beat_miniboss2",
-  "duration": 1.504138,
+  "duration": 1.499138,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

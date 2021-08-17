@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.04,
+  "volume": 0.035,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_select_bullet",
-  "duration": 1.113313,
+  "soundFile": "snd_select_bullet.wav",
+  "duration": 0.33458,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

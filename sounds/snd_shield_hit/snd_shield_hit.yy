@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_shield_hit",
-  "duration": 0.387991,
+  "soundFile": "snd_shield_hit.wav",
+  "duration": 0.154409,
   "parent": {
     "name": "shield sounds",
     "path": "folders/Sounds/action sounds/shield sounds.yy",

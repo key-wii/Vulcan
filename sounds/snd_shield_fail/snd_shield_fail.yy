@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_shield_fail",
-  "duration": 0.695964,
+  "duration": 0.690964,
   "parent": {
     "name": "shield sounds",
     "path": "folders/Sounds/action sounds/shield sounds.yy",

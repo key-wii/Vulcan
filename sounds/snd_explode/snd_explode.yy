@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.12,
+  "volume": 0.15,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_explode",
-  "duration": 4.014796,
+  "soundFile": "snd_explode.wav",
+  "duration": 3.972812,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

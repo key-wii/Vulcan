@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_debug_unlocked",
-  "duration": 1.477,
+  "duration": 1.472,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_shield_break1",
-  "duration": 0.1371,
+  "duration": 0.1321,
   "parent": {
     "name": "shield sounds",
     "path": "folders/Sounds/action sounds/shield sounds.yy",

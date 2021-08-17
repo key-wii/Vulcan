@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.08,
+  "volume": 0.1,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_dragonfly_ally.wav",
-  "duration": 1.173254,
+  "duration": 1.324626,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

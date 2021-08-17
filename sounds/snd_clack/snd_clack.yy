@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_clack.wav",
-  "duration": 0.37085,
+  "duration": 0.36585,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

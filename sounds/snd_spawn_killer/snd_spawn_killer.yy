@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_spawn_killer",
-  "duration": 0.513934,
+  "duration": 0.508934,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

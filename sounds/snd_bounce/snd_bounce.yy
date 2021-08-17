@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_bounce",
-  "duration": 0.125009,
+  "duration": 0.120009,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

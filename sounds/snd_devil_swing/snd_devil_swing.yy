@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.08,
+  "volume": 0.12,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_devil_swing",
-  "duration": 1.248719,
+  "soundFile": "snd_devil_swing.wav",
+  "duration": 1.262562,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

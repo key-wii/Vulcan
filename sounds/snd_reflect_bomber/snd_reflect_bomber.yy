@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_reflect_bomber.wav",
-  "duration": 0.665317,
+  "duration": 0.401973,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

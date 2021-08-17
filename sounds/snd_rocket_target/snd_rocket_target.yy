@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.02,
+  "volume": 0.05,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_rocket_target",
-  "duration": 0.793375,
+  "soundFile": "snd_rocket_target.wav",
+  "duration": 1.324626,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

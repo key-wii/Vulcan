@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.1,
+  "volume": 0.12,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_devil_trigger_fail",
-  "duration": 1.093,
+  "soundFile": "snd_devil_trigger_fail.wav",
+  "duration": 0.561312,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

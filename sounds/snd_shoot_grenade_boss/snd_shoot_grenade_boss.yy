@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_shoot_grenade_boss",
-  "duration": 1.255516,
+  "duration": 1.250516,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

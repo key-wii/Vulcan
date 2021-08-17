@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_grab_heart.wav",
-  "duration": 2.349796,
+  "duration": 2.150068,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_laserhit",
-  "duration": 1.841146,
+  "duration": 1.836146,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.14,
+  "volume": 0.08,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_spawn_hurt",
-  "duration": 0.476655,
+  "soundFile": "snd_spawn_hurt.wav",
+  "duration": 1.017823,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

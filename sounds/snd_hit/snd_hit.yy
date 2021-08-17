@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_hit",
-  "duration": 0.348946,
+  "duration": 0.343946,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

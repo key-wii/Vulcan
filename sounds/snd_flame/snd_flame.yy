@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_flame",
-  "duration": 2.066396,
+  "duration": 2.061396,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

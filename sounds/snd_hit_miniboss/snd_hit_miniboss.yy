@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.05,
+  "volume": 0.08,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_hit_miniboss",
-  "duration": 0.618311,
+  "soundFile": "snd_hit_miniboss.wav",
+  "duration": 1.356531,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

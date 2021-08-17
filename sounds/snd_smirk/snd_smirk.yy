@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_smirk",
-  "duration": 1.624604,
+  "duration": 1.619604,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",

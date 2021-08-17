@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_change_rotation",
-  "duration": 0.312982,
+  "duration": 0.307982,
   "parent": {
     "name": "action sounds",
     "path": "folders/Sounds/action sounds.yy",
