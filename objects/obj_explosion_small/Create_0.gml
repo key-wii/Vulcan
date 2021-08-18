@@ -3,3 +3,5 @@ controller.small_explosion_count += 1;
 adj = .04;
 
 alarm_set(0, 1);
+
+sprite_index = spr_explosion_2;

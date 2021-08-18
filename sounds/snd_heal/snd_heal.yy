@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_heal",
-  "duration": 1.897426,
+  "duration": 1.892426,
   "parent": {
     "name": "ui sounds",
     "path": "folders/Sounds/ui sounds.yy",

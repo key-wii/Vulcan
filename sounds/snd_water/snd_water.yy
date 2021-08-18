@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_water",
-  "duration": 84.6811,
+  "duration": 84.6761,
   "parent": {
     "name": "ui sounds",
     "path": "folders/Sounds/ui sounds.yy",

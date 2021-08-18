@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_text_pause.mp3",
-  "duration": 0.10949,
+  "duration": 0.10449,
   "parent": {
     "name": "ui sounds",
     "path": "folders/Sounds/ui sounds.yy",

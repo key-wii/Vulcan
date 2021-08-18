@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_text_exit.mp3",
-  "duration": 0.422959,
+  "duration": 0.417959,
   "parent": {
     "name": "ui sounds",
     "path": "folders/Sounds/ui sounds.yy",
