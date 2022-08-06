@@ -28,7 +28,21 @@ if (debug) with (controller) {
 if (room != room_menu) {
 	var lv = global.level;
 	draw_set_font(fnt_ammunition);
-	if (lv != 9 && lv != -1 && global.checkpoint < 100) draw_text(500 * display, 28 * display, "Checkpoint: " + string(global.checkpoint));
+	if (lv != 9 && lv != -1 && global.checkpoint < 100) {
+		var chNum = global.checkpoint;
+		var chFive = 0;
+		if (lv >= 4) {
+			for (var i = chNum; i > 10; i -= 10) chFive += 5;
+			chNum = chNum mod 10;
+			switch (chNum) {
+				case 3: chNum = 2; break;	
+				case 6: chNum = 3; break;	
+				case 8: chNum = 4; break;	
+				case 0: chNum = 5; break;	
+			}
+		}
+		draw_text(500 * display, 28 * display, "Checkpoint: " + string(chNum + chFive));
+	}
 	if ((lv > 0 && lv <= 3) || lv == -1) {
 		//draw_text(500 * display, 10 * display, "Level: " + string(lv));
 		var complete = false;

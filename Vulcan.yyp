@@ -190,6 +190,7 @@
     {"id":{"name":"obj_enemy_mage_big_circle","path":"objects/obj_enemy_mage_big_circle/obj_enemy_mage_big_circle.yy",},"order":5,},
     {"id":{"name":"obj_enemy_lizard","path":"objects/obj_enemy_lizard/obj_enemy_lizard.yy",},"order":4,},
     {"id":{"name":"snd_shoot_bomber","path":"sounds/snd_shoot_bomber/snd_shoot_bomber.yy",},"order":40,},
+    {"id":{"name":"spr_empty","path":"sprites/spr_empty/spr_empty.yy",},"order":29,},
     {"id":{"name":"spr_weapon_strip5","path":"sprites/spr_weapon_strip5/spr_weapon_strip5.yy",},"order":0,},
     {"id":{"name":"spr_smirkhuge","path":"sprites/spr_smirkhuge/spr_smirkhuge.yy",},"order":1,},
     {"id":{"name":"spr_smirkhuge_boss","path":"sprites/spr_smirkhuge_boss/spr_smirkhuge_boss.yy",},"order":2,},
@@ -1200,7 +1201,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"music credits.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.3.0.625",
+    "IDEVersion": "2022.6.1.26",
   },
   "resourceVersion": "1.5",
   "name": "Vulcan",

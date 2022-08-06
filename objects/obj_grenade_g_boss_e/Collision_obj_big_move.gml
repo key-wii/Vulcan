@@ -1,4 +1,4 @@
-if (owner.flameKills > 0)
+if (instance_exists(owner) && owner.flameKills > 0)
 	with (owner) {
 		alarm_set(7, alarm_get(7) + 30);
 		if (alarm_get(7) > 79) alarm_set(7, 79);
@@ -14,8 +14,11 @@ hit_target = true;
 alarm_set(0, 50);
 
 with(other) {
-	owner.x_adjust = lengthdir_x(8, point_direction(other.x, other.y, x, y));
-	owner.y_adjust = lengthdir_y(8, point_direction(other.x, other.y, x, y));
+	if (instance_exists(owner)) {
+		owner.burnt += 10;
+		owner.x_adjust = lengthdir_x(8, point_direction(other.x, other.y, x, y));
+		owner.y_adjust = lengthdir_y(8, point_direction(other.x, other.y, x, y));
+	}
 }
 
 move_bounce_solid(true);

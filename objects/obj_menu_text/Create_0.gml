@@ -3,7 +3,7 @@ default_text = "                ";
 /*default_text = "A mutant rat                     Life - 100                   Charges - 2" +
 	"                Smirks during combos          Cheats death while smirking";*/
 default_text1 = "A mutant rat";
-default_text2 = "LIFE - 100";
+default_text2 = "LIFE - 10";
 default_text3 = "Charges - " + string(global.max_trigger / 100);
 default_text4 = "Its smirk allows life to persist";
 default_text5 = "even as its LIFE drops below 0";

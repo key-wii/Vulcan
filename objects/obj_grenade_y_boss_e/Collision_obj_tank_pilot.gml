@@ -1,4 +1,4 @@
-if (owner.flameKills > 0)
+if (instance_exists(owner) && owner.flameKills > 0)
 	with (owner) {
 		alarm_set(7, alarm_get(7) + 30);
 		if (alarm_get(7) > 79) alarm_set(7, 79);

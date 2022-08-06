@@ -5,7 +5,6 @@
 /// @DnDArgument : "ypos_relative" "1"
 /// @DnDArgument : "objectid" "obj_explosion_small"
 /// @DnDArgument : "layer" ""Enemy_Bullets""
-/// @DnDSaveInfo : "objectid" "obj_explosion_small"
 instance_create_layer(x + 0, y + 0, "Enemy_Bullets", obj_explosion_small);
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance

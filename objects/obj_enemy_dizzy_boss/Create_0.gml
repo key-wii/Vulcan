@@ -1,5 +1,5 @@
 event_inherited();
-maxHp = 1200;
+maxHp = 1100;
 //maxHp = 1;
 miniboss = true;
 screenShake = 2;
