@@ -202,15 +202,15 @@ else if (global.level == 9) {
 	alarm_set(6, 1);
 	if (global.halfCheckpoint > 0) {
 		if (global.halfCheckpoint == .5)  global.wave =  6;
-		if (global.halfCheckpoint == 1.5) global.wave = 16;
-		if (global.halfCheckpoint == 2.5) global.wave = 26;
-		if (global.halfCheckpoint == 3.5) global.wave = 36;
+		if (global.halfCheckpoint == 1.5) global.wave = 13;
+		if (global.halfCheckpoint == 2.5) global.wave = 20;
+		if (global.halfCheckpoint == 3.5) global.wave = 25;
 	} else {
-		if (global.checkpoint == 1) global.wave = 11;
-		if (global.checkpoint == 2) global.wave = 21;
-		if (global.checkpoint == 3) global.wave = 31;
-		if (global.checkpoint == 4) { global.wave = 41; instance_destroy(obj_spawner_corners); }
-		if (global.checkpoint >= 5) global.wave = 45;
+		if (global.checkpoint == 1) global.wave = 8;
+		if (global.checkpoint == 2) global.wave = 15;
+		if (global.checkpoint == 3) global.wave = 22;
+		if (global.checkpoint == 4) { global.wave = 26; instance_destroy(obj_spawner_corners); }
+		if (global.checkpoint >= 5) global.wave = 30;
 	}
 }
 else if (global.level == -1)

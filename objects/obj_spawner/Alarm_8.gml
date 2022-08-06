@@ -33,7 +33,7 @@ else if ((seed == 4) && instance_number(obj_enemy_laser) < 1)
 	var enemy = obj_enemy_laser;
 else if ((seed == 5) && instance_number(obj_enemy_laser_circle) < 3)
 	var enemy = obj_enemy_laser_circle;
-else if (global.wave >= 41 && global.wave <= 44) {
+else if (global.wave >= 26 && global.wave <= 29) {
 		 if ((seed == 1 || seed == 6) && instance_number(obj_enemy_killer_s) < 3)
 		var enemy = obj_enemy_killer_s;
 	else if ((seed == 2 || seed == 7) && instance_number(obj_enemy_killer_b) < 3)

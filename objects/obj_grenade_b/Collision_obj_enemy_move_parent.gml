@@ -18,19 +18,21 @@ var pow = 5;
 with (other) {
 	var broken_shield = shield < 1 && shielding = true;
 	if(broken_shield || !shielding) {
-		if (miniboss == false) {
-			damage += pow;
-			owner.damage += pow;
-		} else {
-			damage += 3 * pow;
-			owner.damage += 3 * pow;
+		if (instance_exists(owner)) {
+			if (miniboss == false) {
+				damage += pow;
+				owner.damage += pow;
+			} else {
+				damage += 3 * pow;
+				owner.damage += 3 * pow;
+			}
+			with (owner) {
+				sprite_index = dead_sprite;
+				alarm_set(9, 10);
+			}
+			owner.x_adjust = lengthdir_x(8, point_direction(other.x, other.y, x, y));
+			owner.y_adjust = lengthdir_y(8, point_direction(other.x, other.y, x, y));
 		}
-		with (owner) {
-			sprite_index = dead_sprite;
-			alarm_set(9, 10);
-		}
-		owner.x_adjust = lengthdir_x(8, point_direction(other.x, other.y, x, y));
-		owner.y_adjust = lengthdir_y(8, point_direction(other.x, other.y, x, y));
 		with (other) {
 			var explosion = instance_create_layer(x + 0, y + 0, "Explosions", obj_explosion_small);
 			explosion.direction = direction;

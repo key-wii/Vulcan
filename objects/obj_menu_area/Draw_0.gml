@@ -5,7 +5,7 @@ draw_set_halign(fa_center);
 if (area == 9) {
 	if (default_sprite == spr_levels_beat) draw_set_color(c_teal);
 	else draw_set_color(c_gray);
-	var w = "Waves: 45";
+	var w = "Waves: 30";
 	var wh = string_height(w);
 	draw_text(xstart, ystart - 124 - wh, w); //top text
 	draw_text(xstart, ystart + 124, w); //bottom text

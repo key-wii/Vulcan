@@ -1,5 +1,5 @@
 if (other.object_index == obj_menu_char_move) {
-	with (other.owner) {
+	if (instance_exists(other.owner)) with (other.owner) {
 		spin = 372;
 		charCount = 0;
 		sprite_index = dead_sprite;

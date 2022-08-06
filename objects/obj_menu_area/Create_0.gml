@@ -67,7 +67,7 @@ ini_open("saveData.ini");
 }
 ini_close();
 
-if (area != 9) waves = 33;
+if (area != 9) waves = 15;
 hovering = false;
 up = true;
 yyy = 0;
